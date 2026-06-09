@@ -1,0 +1,88 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - complementary [ref=e8]:
+        - generic [ref=e10]:
+          - img [ref=e12]
+          - generic [ref=e16]:
+            - paragraph [ref=e17]: Condomínio
+            - paragraph [ref=e18]: Gestão Residencial
+        - navigation [ref=e19]:
+          - link "Dashboard" [ref=e156] [cursor=pointer]:
+            - /url: /dashboard
+            - generic [ref=e21]:
+              - img [ref=e22]
+              - generic [ref=e27]: Dashboard
+          - link "Avisos" [ref=e157] [cursor=pointer]:
+            - /url: /avisos
+            - generic [ref=e29]:
+              - img [ref=e30]
+              - generic [ref=e33]: Avisos
+          - link "Ocorrências" [ref=e158] [cursor=pointer]:
+            - /url: /ocorrencias
+            - generic [ref=e35]:
+              - img [ref=e36]
+              - generic [ref=e38]: Ocorrências
+          - link "Reservas" [ref=e159] [cursor=pointer]:
+            - /url: /reservas
+            - generic [ref=e40]:
+              - img [ref=e41]
+              - generic [ref=e43]: Reservas
+          - link "Comunidade" [ref=e160] [cursor=pointer]:
+            - /url: /comunidade
+            - generic [ref=e45]:
+              - img [ref=e46]
+              - generic [ref=e50]: Comunidade
+          - link "Moradores" [ref=e161] [cursor=pointer]:
+            - /url: /moradores
+            - generic [ref=e52]:
+              - img [ref=e53]
+              - generic [ref=e56]: Moradores
+        - generic [ref=e58]:
+          - generic [ref=e60]: C
+          - generic [ref=e61]:
+            - paragraph [ref=e62]: Carlos Síndico
+            - paragraph [ref=e63]: Síndico
+      - generic [ref=e64]:
+        - banner [ref=e65]:
+          - heading "Condomínio" [level=1] [ref=e162]
+          - button "Sair" [ref=e163] [cursor=pointer]:
+            - img
+            - text: Sair
+        - main [ref=e68]:
+          - generic [ref=e69]:
+            - generic [ref=e70]:
+              - heading "Comunidade" [level=1] [ref=e164]
+              - paragraph [ref=e72]: Conecte-se com os moradores do condomínio
+            - generic [ref=e73]:
+              - button "Chat" [ref=e165] [cursor=pointer]:
+                - img [ref=e75]
+                - text: Chat
+              - button "Vagas de Garagem" [ref=e166] [cursor=pointer]:
+                - img [ref=e78]
+                - text: Vagas de Garagem
+              - button "Loja" [ref=e167] [cursor=pointer]:
+                - img [ref=e83]
+                - text: Loja
+            - generic [ref=e102]:
+              - generic [ref=e103]:
+                - generic [ref=e104]:
+                  - button "Disponíveis" [ref=e168] [cursor=pointer]
+                  - button "Todas" [ref=e169] [cursor=pointer]
+                - button "Anunciar Vaga" [active] [ref=e170] [cursor=pointer]:
+                  - img
+                  - text: Anunciar Vaga
+              - generic [ref=e171]:
+                - generic [ref=e172]:
+                  - generic [ref=e174]: Aluguel
+                  - generic [ref=e175]: R$ 350,00/mês
+                - heading "Vaga coberta bloco A - número 12" [level=3] [ref=e176]
+                - generic [ref=e177]:
+                  - generic [ref=e178]: C
+                  - generic [ref=e179]: Carlos Síndico
+    - region "Notifications alt+T":
+      - list:
+        - listitem [ref=e180]:
+          - img [ref=e182]
+          - generic [ref=e185]: Vaga anunciada com sucesso!
+  - alert [ref=e7]

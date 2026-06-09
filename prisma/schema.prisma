@@ -1,0 +1,278 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// ──────────────────────────────────────────
+// NextAuth required tables
+// ──────────────────────────────────────────
+
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String?
+  access_token      String?
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String?
+  session_state     String?
+  user              User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+}
+
+// ──────────────────────────────────────────
+// Domain models
+// SQLite doesn't support native enums; stored as String, validated in app logic
+// ──────────────────────────────────────────
+
+model User {
+  id            String    @id @default(cuid())
+  name          String
+  email         String    @unique
+  emailVerified DateTime?
+  password      String    @default("")
+  image         String?
+  perfil        String    @default("MORADOR") // MORADOR | SINDICO | PORTEIRO | ADMINISTRADORA
+  apartamento   String?
+  bloco         String?
+  cpf           String?
+  telefone      String?
+  fotoUrl       String?
+  ativo         Boolean   @default(true)
+  condoId       String
+  condo         Condo     @relation(fields: [condoId], references: [id])
+  createdAt     DateTime  @default(now())
+
+  accounts             Account[]
+  sessions             Session[]
+  avisosCriados        Aviso[]
+  ocorrencias          Ocorrencia[]
+  reservas             Reserva[]
+  autorizacoesEmitidas AutorizacaoVisitante[]
+  entregasRecebidas    Entrega[]              @relation("MoradorEntrega")
+  entregasRegistradas  Entrega[]              @relation("PorteiroEntrega")
+  visitasRegistradas   VisitaRegistrada[]
+  vagasGaragem         VagaGaragem[]
+  anunciosLoja         AnuncioLoja[]
+  mensagensChat        MensagemChat[]
+  conversasComprador   ConversaLoja[]         @relation("CompraConversas")
+  conversasVendedor    ConversaLoja[]         @relation("VendaConversas")
+  mensagensConversa    MensagemConversaLoja[] @relation("MensagensConversa")
+}
+
+model Condo {
+  id        String   @id @default(cuid())
+  nome      String
+  endereco  String
+  createdAt DateTime @default(now())
+
+  users         User[]
+  avisos        Aviso[]
+  ocorrencias   Ocorrencia[]
+  areas         AreaComum[]
+  vagasGaragem  VagaGaragem[]
+  anunciosLoja  AnuncioLoja[]
+  mensagensChat MensagemChat[]
+}
+
+model Aviso {
+  id          String    @id @default(cuid())
+  titulo      String
+  descricao   String
+  categoria   String    // manutencao | financeiro | geral | seguranca
+  urgente     Boolean   @default(false)
+  ativo       Boolean   @default(true)
+  publicadoEm DateTime  @default(now())
+  expiradoEm  DateTime?
+  condoId     String
+  condo       Condo     @relation(fields: [condoId], references: [id])
+  autorId     String
+  autor       User      @relation(fields: [autorId], references: [id])
+}
+
+model Ocorrencia {
+  id           String   @id @default(cuid())
+  tipo         String   // barulho | vazamento | iluminacao | seguranca | outro
+  descricao    String
+  fotoUrl      String?
+  status       String   @default("ABERTA") // ABERTA | EM_ANALISE | RESOLVIDA | ENCERRADA
+  observacoes  String?
+  abertaEm     DateTime @default(now())
+  atualizadaEm DateTime @updatedAt
+  condoId      String
+  condo        Condo    @relation(fields: [condoId], references: [id])
+  moradorId    String
+  morador      User     @relation(fields: [moradorId], references: [id])
+}
+
+model AreaComum {
+  id         String    @id @default(cuid())
+  nome       String
+  descricao  String?
+  capacidade Int?
+  ativa      Boolean   @default(true)
+  condoId    String
+  condo      Condo     @relation(fields: [condoId], references: [id])
+  reservas   Reserva[]
+}
+
+model Reserva {
+  id           String    @id @default(cuid())
+  areaId       String
+  area         AreaComum @relation(fields: [areaId], references: [id])
+  moradorId    String
+  morador      User      @relation(fields: [moradorId], references: [id])
+  data         DateTime
+  horaInicio   String    // "14:00"
+  horaFim      String    // "18:00"
+  status       String    @default("PENDENTE") // PENDENTE | APROVADA | REJEITADA | CANCELADA
+  observacoes  String?
+  criadaEm     DateTime  @default(now())
+  atualizadaEm DateTime  @updatedAt
+}
+
+model AutorizacaoVisitante {
+  id            String   @id @default(cuid())
+  nomeVisitante String
+  documento     String?
+  dataValida    DateTime
+  observacoes   String?
+  ativa         Boolean  @default(true)
+  moradorId     String
+  morador       User     @relation(fields: [moradorId], references: [id])
+  criadaEm      DateTime @default(now())
+
+  visitas VisitaRegistrada[]
+}
+
+model VisitaRegistrada {
+  id            String               @id @default(cuid())
+  autorizacaoId String
+  autorizacao   AutorizacaoVisitante @relation(fields: [autorizacaoId], references: [id])
+  porteiroId    String
+  porteiro      User                 @relation(fields: [porteiroId], references: [id])
+  entradaEm     DateTime             @default(now())
+  saidaEm       DateTime?
+  observacoes   String?
+}
+
+model Entrega {
+  id          String    @id @default(cuid())
+  moradorId   String
+  morador     User      @relation("MoradorEntrega", fields: [moradorId], references: [id])
+  porteiroId  String
+  porteiro    User      @relation("PorteiroEntrega", fields: [porteiroId], references: [id])
+  remetente   String?
+  descricao   String
+  status      String    @default("AGUARDANDO_RETIRADA") // AGUARDANDO_RETIRADA | RETIRADA
+  recebidaEm  DateTime  @default(now())
+  retiradaEm  DateTime?
+  observacoes String?
+}
+
+// ──────────────────────────────────────────
+// Comunidade
+// ──────────────────────────────────────────
+
+model VagaGaragem {
+  id             String   @id @default(cuid())
+  titulo         String
+  descricao      String?
+  valor          Float
+  tipo           String   @default("ALUGUEL") // ALUGUEL | VENDA
+  periodoAluguel String   @default("MENSAL")  // MENSAL | DIARIO (apenas para ALUGUEL)
+  bloco          String?
+  numeroApto     String?
+  disponivel     Boolean  @default(true)
+  condoId        String
+  condo          Condo    @relation(fields: [condoId], references: [id])
+  moradorId      String
+  morador        User     @relation(fields: [moradorId], references: [id])
+  criadaEm      DateTime  @default(now())
+  atualizadaEm  DateTime  @updatedAt
+}
+
+model AnuncioLoja {
+  id           String   @id @default(cuid())
+  titulo       String
+  descricao    String
+  valor        Float?
+  tipo         String   @default("VENDA")     // VENDA | TROCA | DOACAO
+  categoria    String   @default("outro")     // eletronico | movel | roupa | outro
+  status       String   @default("DISPONIVEL") // DISPONIVEL | RESERVADO | VENDIDO
+  fotoUrl      String?
+  condoId      String
+  condo        Condo    @relation(fields: [condoId], references: [id])
+  moradorId    String
+  morador      User     @relation(fields: [moradorId], references: [id])
+  criadaEm    DateTime  @default(now())
+  atualizadaEm DateTime @updatedAt
+  conversas    ConversaLoja[]
+}
+
+model ConversaLoja {
+  id          String                 @id @default(cuid())
+  anuncioId   String
+  anuncio     AnuncioLoja            @relation(fields: [anuncioId], references: [id], onDelete: Cascade)
+  compradorId String
+  comprador   User                   @relation("CompraConversas", fields: [compradorId], references: [id])
+  vendedorId  String
+  vendedor    User                   @relation("VendaConversas", fields: [vendedorId], references: [id])
+  criadaEm    DateTime               @default(now())
+  mensagens   MensagemConversaLoja[]
+
+  @@unique([anuncioId, compradorId])
+}
+
+model MensagemConversaLoja {
+  id         String       @id @default(cuid())
+  conversaId String
+  conversa   ConversaLoja @relation(fields: [conversaId], references: [id], onDelete: Cascade)
+  autorId    String
+  autor      User         @relation("MensagensConversa", fields: [autorId], references: [id])
+  conteudo   String
+  criadaEm   DateTime     @default(now())
+}
+
+model PasswordResetToken {
+  id        String   @id @default(cuid())
+  token     String   @unique
+  email     String
+  expiraEm  DateTime
+  criadoEm  DateTime @default(now())
+}
+
+model MensagemChat {
+  id        String   @id @default(cuid())
+  conteudo  String
+  condoId   String
+  condo     Condo    @relation(fields: [condoId], references: [id])
+  autorId   String
+  autor     User     @relation(fields: [autorId], references: [id])
+  criadaEm DateTime  @default(now())
+}

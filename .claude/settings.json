@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(code-review)",
+      "Skill(code-review:*)",
+      "Bash(grep -E \"\\\\.\\(ts|js\\)$\")",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(json.dumps\\({**d.get\\('dependencies',{}\\), **d.get\\('devDependencies',{}\\)}, indent=2\\)\\)\")",
+      "Bash(findstr /i \"formidable\")",
+      "Bash(curl -s http://localhost:3000 -o /dev/null -w \"%{http_code}\")",
+      "Bash(node -e \"const { PrismaClient } = require\\('@prisma/client'\\); const p = new PrismaClient\\(\\); console.log\\('conversaLoja:', typeof p.conversaLoja\\); console.log\\('mensagemConversaLoja:', typeof p.mensagemConversaLoja\\);\")",
+      "mcp__plugin_playwright_playwright__browser_network_request",
+      "Bash(curl -s -b \"next-auth.session-token=test\" \"http://localhost:3000/api/comunidade/loja/conversas?anuncioId=cmq36ffah0000tafz4axxilh8\")",
+      "Bash(Get-Content \"C:\\\\Tempnextjs-dev.log\" -Tail 50)",
+      "Read(//c//**)",
+      "mcp__plugin_playwright_playwright__browser_network_requests",
+      "PowerShell(Get-ChildItem \"c:\\\\Users\\\\Administrator\\\\Documents\\\\GitHub\\\\Condo\" -Filter \"CTempnextjs.log\" | ForEach-Object { Get-Content $_.FullName -Tail 20 })",
+      "PowerShell(Get-Process -Id 1672 | Select-Object Id, ProcessName, CommandLine 2>&1; \\(Get-CimInstance Win32_Process -Filter \"ProcessId = 1672\"\\).CommandLine)",
+      "Bash(curl -s \"http://localhost:3000/api/comunidade/loja/conversas?anuncioId=cmq36ffah0000tafz4axxilh8\" -H \"Cookie: next-auth.session-token=dummy\")",
+      "PowerShell(cd \"c:\\\\Users\\\\Administrator\\\\Documents\\\\GitHub\\\\Condo\"; npx tsc --noEmit --skipLibCheck 2>&1 | Where-Object { $_ -match \"login|register\" })",
+      "Bash(node -e ' *)"
+    ]
+  }
+}

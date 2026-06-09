@@ -1,0 +1,86 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e205]:
+      - complementary [ref=e206]:
+        - generic [ref=e208]:
+          - img [ref=e210]
+          - generic [ref=e214]:
+            - paragraph [ref=e215]: Condomínio
+            - paragraph [ref=e216]: Gestão Residencial
+        - navigation [ref=e217]:
+          - link "Dashboard" [ref=e218] [cursor=pointer]:
+            - /url: /dashboard
+            - generic [ref=e219]:
+              - img [ref=e220]
+              - generic [ref=e225]: Dashboard
+          - link "Avisos" [ref=e226] [cursor=pointer]:
+            - /url: /avisos
+            - generic [ref=e227]:
+              - img [ref=e228]
+              - generic [ref=e231]: Avisos
+          - link "Ocorrências" [ref=e232] [cursor=pointer]:
+            - /url: /ocorrencias
+            - generic [ref=e233]:
+              - img [ref=e234]
+              - generic [ref=e236]: Ocorrências
+          - link "Reservas" [ref=e237] [cursor=pointer]:
+            - /url: /reservas
+            - generic [ref=e238]:
+              - img [ref=e239]
+              - generic [ref=e241]: Reservas
+          - link "Visitantes" [ref=e242] [cursor=pointer]:
+            - /url: /visitantes
+            - generic [ref=e243]:
+              - img [ref=e244]
+              - generic [ref=e249]: Visitantes
+          - link "Entregas" [ref=e250] [cursor=pointer]:
+            - /url: /entregas
+            - generic [ref=e251]:
+              - img [ref=e252]
+              - generic [ref=e256]: Entregas
+          - link "Comunidade" [ref=e257] [cursor=pointer]:
+            - /url: /comunidade
+            - generic [ref=e258]:
+              - img [ref=e259]
+              - generic [ref=e263]: Comunidade
+        - generic [ref=e265]:
+          - generic [ref=e267]: A
+          - generic [ref=e268]:
+            - paragraph [ref=e269]: Ana Morador
+            - paragraph [ref=e270]: Morador
+      - generic [ref=e271]:
+        - banner [ref=e272]:
+          - heading "Sofá 3 lugares - cor bege" [level=1] [ref=e273]
+          - button "Sair" [ref=e274] [cursor=pointer]:
+            - img
+            - text: Sair
+        - main [ref=e275]:
+          - generic [ref=e276]:
+            - link "Voltar à Loja" [ref=e277] [cursor=pointer]:
+              - /url: /comunidade
+              - img [ref=e278]
+              - text: Voltar à Loja
+            - generic [ref=e280]:
+              - generic [ref=e281]: Venda
+              - generic [ref=e282]: Disponível
+              - generic [ref=e283]: Outro
+            - heading "Sofá 3 lugares - cor bege" [level=1] [ref=e284]
+            - paragraph [ref=e285]: R$ 800,00
+            - paragraph [ref=e286]: Sofá em ótimo estado, usado por apenas 1 ano. Retirada no apartamento.
+            - generic [ref=e287]:
+              - generic [ref=e288]: C
+              - paragraph [ref=e290]: Carlos Síndico
+            - generic [ref=e291]:
+              - heading "Chat com o Vendedor" [level=2] [ref=e292]
+              - generic [ref=e293]:
+                - generic [ref=e295]:
+                  - generic [ref=e296]: A
+                  - generic [ref=e297]:
+                    - generic [ref=e298]: Ana Morador
+                    - generic [ref=e299]: dsadsads
+                - generic [ref=e300]:
+                  - textbox "Mensagem… (Enter para enviar)" [ref=e301]
+                  - button [disabled]:
+                    - img
+    - region "Notifications alt+T"
+  - alert [ref=e7]: Sofá 3 lugares - cor bege

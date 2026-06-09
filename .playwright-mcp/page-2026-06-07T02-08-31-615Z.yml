@@ -1,0 +1,80 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - complementary [ref=e8]:
+        - generic [ref=e10]:
+          - img [ref=e12]
+          - generic [ref=e16]:
+            - paragraph [ref=e17]: Condomínio
+            - paragraph [ref=e18]: Gestão Residencial
+        - navigation [ref=e19]:
+          - link "Dashboard" [ref=e20] [cursor=pointer]:
+            - /url: /dashboard
+            - generic [ref=e21]:
+              - img [ref=e22]
+              - generic [ref=e27]: Dashboard
+          - link "Avisos" [ref=e28] [cursor=pointer]:
+            - /url: /avisos
+            - generic [ref=e29]:
+              - img [ref=e30]
+              - generic [ref=e33]: Avisos
+          - link "Ocorrências" [ref=e34] [cursor=pointer]:
+            - /url: /ocorrencias
+            - generic [ref=e35]:
+              - img [ref=e36]
+              - generic [ref=e38]: Ocorrências
+          - link "Reservas" [ref=e39] [cursor=pointer]:
+            - /url: /reservas
+            - generic [ref=e40]:
+              - img [ref=e41]
+              - generic [ref=e43]: Reservas
+          - link "Comunidade" [ref=e44] [cursor=pointer]:
+            - /url: /comunidade
+            - generic [ref=e45]:
+              - img [ref=e46]
+              - generic [ref=e50]: Comunidade
+          - link "Moradores" [ref=e51] [cursor=pointer]:
+            - /url: /moradores
+            - generic [ref=e52]:
+              - img [ref=e53]
+              - generic [ref=e56]: Moradores
+        - generic [ref=e58]:
+          - generic [ref=e60]: C
+          - generic [ref=e61]:
+            - paragraph [ref=e62]: Carlos Síndico
+            - paragraph [ref=e63]: Síndico
+      - generic [ref=e64]:
+        - banner [ref=e65]:
+          - heading "Condomínio" [level=1] [ref=e66]
+          - button "Sair" [ref=e67] [cursor=pointer]:
+            - img
+            - text: Sair
+        - main [ref=e68]:
+          - generic [ref=e69]:
+            - generic [ref=e70]:
+              - heading "Comunidade" [level=1] [ref=e71]
+              - paragraph [ref=e72]: Conecte-se com os moradores do condomínio
+            - generic [ref=e73]:
+              - button "Chat" [ref=e74] [cursor=pointer]:
+                - img [ref=e75]
+                - text: Chat
+              - button "Vagas de Garagem" [ref=e77] [cursor=pointer]:
+                - img [ref=e78]
+                - text: Vagas de Garagem
+              - button "Loja" [ref=e82] [cursor=pointer]:
+                - img [ref=e83]
+                - text: Loja
+            - generic [ref=e86]:
+              - generic [ref=e95]:
+                - generic [ref=e96]: C
+                - generic [ref=e97]:
+                  - generic [ref=e98]:
+                    - generic [ref=e99]: Carlos Síndico
+                    - generic [ref=e100]: 06/06, 23:08
+                  - generic [ref=e101]: Olá moradores! Reunião de condomínio na sexta às 19h no salão.
+              - generic [ref=e92]:
+                - textbox "Escreva uma mensagem… (Enter para enviar, Shift+Enter para quebrar linha)" [ref=e93]
+                - button [disabled]:
+                  - img
+    - region "Notifications alt+T"
+  - alert [ref=e7]

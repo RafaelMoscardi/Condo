@@ -1,0 +1,139 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - complementary [ref=e4]:
+        - generic [ref=e6]:
+          - img [ref=e8]
+          - generic [ref=e12]:
+            - paragraph [ref=e13]: Condomínio
+            - paragraph [ref=e14]: Gestão Residencial
+        - navigation [ref=e15]:
+          - link "Dashboard" [ref=e16] [cursor=pointer]:
+            - /url: /dashboard
+            - generic [ref=e17]:
+              - img [ref=e18]
+              - generic [ref=e23]: Dashboard
+          - link "Avisos" [ref=e24] [cursor=pointer]:
+            - /url: /avisos
+            - generic [ref=e25]:
+              - img [ref=e26]
+              - generic [ref=e29]: Avisos
+          - link "Ocorrências" [ref=e30] [cursor=pointer]:
+            - /url: /ocorrencias
+            - generic [ref=e31]:
+              - img [ref=e32]
+              - generic [ref=e34]: Ocorrências
+          - link "Reservas" [ref=e35] [cursor=pointer]:
+            - /url: /reservas
+            - generic [ref=e36]:
+              - img [ref=e37]
+              - generic [ref=e39]: Reservas
+          - link "Visitantes" [ref=e40] [cursor=pointer]:
+            - /url: /visitantes
+            - generic [ref=e41]:
+              - img [ref=e42]
+              - generic [ref=e47]: Visitantes
+          - link "Entregas" [ref=e48] [cursor=pointer]:
+            - /url: /entregas
+            - generic [ref=e49]:
+              - img [ref=e50]
+              - generic [ref=e54]: Entregas
+          - link "Comunidade" [ref=e55] [cursor=pointer]:
+            - /url: /comunidade
+            - generic [ref=e56]:
+              - img [ref=e57]
+              - generic [ref=e61]: Comunidade
+        - generic [ref=e63]:
+          - generic [ref=e65]: A
+          - generic [ref=e66]:
+            - paragraph [ref=e67]: Ana Morador
+            - paragraph [ref=e68]: Morador
+      - generic [ref=e69]:
+        - banner [ref=e70]:
+          - heading "Condomínio" [level=1] [ref=e71]
+          - button "Sair" [ref=e72] [cursor=pointer]:
+            - img
+            - text: Sair
+        - main [ref=e73]:
+          - generic [ref=e74]:
+            - generic [ref=e75]:
+              - heading "Comunidade" [level=1] [ref=e76]
+              - paragraph [ref=e77]: Conecte-se com os moradores do condomínio
+            - generic [ref=e78]:
+              - button "Chat" [ref=e79] [cursor=pointer]:
+                - img [ref=e80]
+                - text: Chat
+              - button "Vagas de Garagem" [ref=e82] [cursor=pointer]:
+                - img [ref=e83]
+                - text: Vagas de Garagem
+              - button "Loja" [active] [ref=e87] [cursor=pointer]:
+                - img [ref=e88]
+                - text: Loja
+            - generic [ref=e91]:
+              - generic [ref=e92]:
+                - generic [ref=e93]:
+                  - button "Todos" [ref=e94] [cursor=pointer]
+                  - button "Venda" [ref=e95] [cursor=pointer]
+                  - button "Troca" [ref=e96] [cursor=pointer]
+                  - button "Doação" [ref=e97] [cursor=pointer]
+                - button "Publicar Anúncio" [ref=e98] [cursor=pointer]:
+                  - img
+                  - text: Publicar Anúncio
+              - generic [ref=e99]:
+                - link "Doação Disponível Outro Mia Khalifa Mia Khalifa 100% funcional Gratuito C Carlos Síndico" [ref=e100] [cursor=pointer]:
+                  - /url: /comunidade/loja/cmq36ffah0000tafz4axxilh8
+                  - generic [ref=e101]:
+                    - generic [ref=e102]: Doação
+                    - generic [ref=e103]: Disponível
+                    - generic [ref=e104]: Outro
+                  - img "Mia Khalifa" [ref=e105]
+                  - heading "Mia Khalifa" [level=3] [ref=e106]
+                  - paragraph [ref=e107]: 100% funcional
+                  - paragraph [ref=e108]: Gratuito
+                  - generic [ref=e109]:
+                    - generic [ref=e110]: C
+                    - generic [ref=e111]: Carlos Síndico
+                    - img [ref=e112]
+                - link "Doação Disponível Outro 1 KG de arroz GRATIS Gratuito A Ana Morador Apt 101-A" [ref=e114] [cursor=pointer]:
+                  - /url: /comunidade/loja/cmq35ho0e000b13widy51hn5d
+                  - generic [ref=e115]:
+                    - generic [ref=e116]: Doação
+                    - generic [ref=e117]: Disponível
+                    - generic [ref=e118]: Outro
+                  - heading "1 KG de arroz" [level=3] [ref=e119]
+                  - paragraph [ref=e120]: GRATIS
+                  - paragraph [ref=e121]: Gratuito
+                  - generic [ref=e122]:
+                    - generic [ref=e123]: A
+                    - generic [ref=e124]: Ana Morador
+                    - generic [ref=e125]: Apt 101-A
+                    - img [ref=e126]
+                - link "Venda Disponível Móvel Sofa 4 lugares melhor que do claudio NOVO R$ 1.000,00 A Ana Morador Apt 101-A" [ref=e128] [cursor=pointer]:
+                  - /url: /comunidade/loja/cmq35h55b000a13wisi9od2lb
+                  - generic [ref=e129]:
+                    - generic [ref=e130]: Venda
+                    - generic [ref=e131]: Disponível
+                    - generic [ref=e132]: Móvel
+                  - heading "Sofa 4 lugares melhor que do claudio" [level=3] [ref=e133]
+                  - paragraph [ref=e134]: NOVO
+                  - paragraph [ref=e135]: R$ 1.000,00
+                  - generic [ref=e136]:
+                    - generic [ref=e137]: A
+                    - generic [ref=e138]: Ana Morador
+                    - generic [ref=e139]: Apt 101-A
+                    - img [ref=e140]
+                - link "Venda Disponível Outro Sofá 3 lugares - cor bege Sofá em ótimo estado, usado por apenas 1 ano. Retirada no apartamento. R$ 800,00 C Carlos Síndico" [ref=e142] [cursor=pointer]:
+                  - /url: /comunidade/loja/cmq359i2q000613wiak2ysk9g
+                  - generic [ref=e143]:
+                    - generic [ref=e144]: Venda
+                    - generic [ref=e145]: Disponível
+                    - generic [ref=e146]: Outro
+                  - heading "Sofá 3 lugares - cor bege" [level=3] [ref=e147]
+                  - paragraph [ref=e148]: Sofá em ótimo estado, usado por apenas 1 ano. Retirada no apartamento.
+                  - paragraph [ref=e149]: R$ 800,00
+                  - generic [ref=e150]:
+                    - generic [ref=e151]: C
+                    - generic [ref=e152]: Carlos Síndico
+                    - img [ref=e153]
+    - region "Notifications alt+T"
+  - alert [ref=e155]

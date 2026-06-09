@@ -1,0 +1,73 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - img [ref=e8]
+        - generic [ref=e12]: Condomínio
+      - generic [ref=e13]:
+        - button "Entrar" [ref=e14] [cursor=pointer]
+        - button "Criar conta" [active] [ref=e15] [cursor=pointer]
+      - generic [ref=e16]:
+        - heading "Criar conta" [level=2] [ref=e47]
+        - paragraph [ref=e18]: Preencha seus dados para solicitar acesso
+      - generic [ref=e48]:
+        - button "Foto" [ref=e51] [cursor=pointer]:
+          - img [ref=e52]
+          - generic [ref=e55]: Foto
+        - generic [ref=e56]:
+          - generic [ref=e57]: Nome completo *
+          - generic [ref=e58]:
+            - img [ref=e59]
+            - textbox "Nome completo *" [ref=e62]:
+              - /placeholder: Seu nome completo
+        - generic [ref=e63]:
+          - generic [ref=e64]: E-mail *
+          - generic [ref=e65]:
+            - img [ref=e66]
+            - textbox "E-mail *" [ref=e69]:
+              - /placeholder: seu@email.com
+              - text: sindico@condo.com
+        - generic [ref=e70]:
+          - generic [ref=e71]:
+            - generic [ref=e72]: Senha *
+            - generic [ref=e73]:
+              - img [ref=e74]
+              - textbox "Senha *" [ref=e77]:
+                - /placeholder: ••••••••
+                - text: senha123
+          - generic [ref=e78]:
+            - generic [ref=e79]: Confirmar *
+            - generic [ref=e80]:
+              - img [ref=e81]
+              - textbox "Confirmar *" [ref=e84]:
+                - /placeholder: ••••••••
+        - generic [ref=e85]:
+          - generic [ref=e86]:
+            - generic [ref=e87]: Bloco
+            - generic [ref=e88]:
+              - img [ref=e89]
+              - textbox "Bloco" [ref=e92]:
+                - /placeholder: "Ex: A"
+          - generic [ref=e93]:
+            - generic [ref=e94]: Apartamento
+            - generic [ref=e95]:
+              - img [ref=e96]
+              - textbox "Apartamento" [ref=e99]:
+                - /placeholder: "Ex: 101"
+        - generic [ref=e100]:
+          - generic [ref=e101]: CPF
+          - generic [ref=e102]:
+            - img [ref=e103]
+            - textbox "CPF" [ref=e105]:
+              - /placeholder: 000.000.000-00
+        - generic [ref=e106]:
+          - generic [ref=e107]: Telefone com DDD
+          - generic [ref=e108]:
+            - img [ref=e109]
+            - textbox "Telefone com DDD" [ref=e111]:
+              - /placeholder: (11) 99999-9999
+        - button "Criar conta" [ref=e112] [cursor=pointer]:
+          - text: Criar conta
+          - img
+    - region "Notifications alt+T"
+  - alert [ref=e46]
