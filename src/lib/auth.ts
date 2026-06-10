@@ -98,7 +98,12 @@ export const authOptions: NextAuthOptions = {
       if (account?.provider === "google") {
         const dbUser = await prisma.user.findUnique({ where: { email: user.email! } });
         if (dbUser && !dbUser.ativo) {
-          return "/login?erro=aguardando_aprovacao";
+          // Auto-ativa se já tem senha (registrou pelo form antes)
+          if (dbUser.password) {
+            await prisma.user.update({ where: { id: dbUser.id }, data: { ativo: true } });
+          } else {
+            return "/login?erro=aguardando_aprovacao";
+          }
         }
       }
       return true;
