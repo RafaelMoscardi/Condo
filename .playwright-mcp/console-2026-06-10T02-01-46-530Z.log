@@ -1,0 +1,51 @@
+[    2059ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///./node_modules/react-dom/cjs/react-dom.development.js:29889
+[    2117ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/login:0
+[    2119ms] [LOG] [HMR] connected @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:38
+[    9112ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[    9838ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[   62423ms] [ERROR] Error: Loading initial props cancelled
+    at eval (webpack-internal:///./node_modules/next/dist/shared/lib/router/router.js:1338:29)
+    at async Router.getRouteInfo (webpack-internal:///./node_modules/next/dist/shared/lib/router/router.js:1086:41)
+    at async Router.change (webpack-internal:///./node_modules/next/dist/shared/lib/router/router.js:672:29) @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[   64709ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[   64871ms] [LOG] [Fast Refresh] done in 161ms @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:190
+[   65162ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/perfil:0
+[   65162ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/perfil:0
+[   65162ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/perfil:0
+[   74259ms] [ERROR] Warning: Function components cannot be given refs. Attempts to access this ref will fail. Did you mean to use React.forwardRef()?%s%s 
+
+Check the render method of `DialogClose`. 
+    at Button (webpack-internal:///./src/components/ui/button.tsx:42:11)
+    at DialogClose (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/close/DialogClose.js:28:5)
+    at div
+    at FloatingFocusManager (webpack-internal:///./node_modules/@base-ui/react/esm/floating-ui-react/components/FloatingFocusManager.js:143:5)
+    at DialogPopup (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/popup/DialogPopup.js:51:5)
+    at FloatingPortal (webpack-internal:///./node_modules/@base-ui/react/esm/floating-ui-react/components/FloatingPortal.js:126:5)
+    at DialogPortal (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/portal/DialogPortal.js:31:5)
+    at DialogPortal (webpack-internal:///./src/components/ui/dialog.tsx:53:14)
+    at DialogContent (webpack-internal:///./src/components/ui/dialog.tsx:90:11)
+    at DialogRoot (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/root/DialogRoot.js:21:51)
+    at Dialog (webpack-internal:///./src/components/ui/dialog.tsx:29:14)
+    at ConfirmDialog (webpack-internal:///./src/components/ui/confirm-dialog.tsx:13:11)
+    at div
+    at AppShell (webpack-internal:///./src/components/layout/AppShell.tsx:32:11)
+    at PerfilPage (webpack-internal:///./src/pages/perfil/index.tsx:42:11)
+    at SessionProvider (webpack-internal:///./node_modules/next-auth/react/index.js:365:24)
+    at App (webpack-internal:///./src/pages/_app.tsx:17:11)
+    at PathnameContextProviderAdapter (webpack-internal:///./node_modules/next/dist/shared/lib/router/adapters.js:81:11)
+    at ErrorBoundary (webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/ErrorBoundary.js:41:9)
+    at ReactDevOverlay (webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/ReactDevOverlay.js:33:11)
+    at Container (webpack-internal:///./node_modules/next/dist/client/index.js:81:1)
+    at AppContainer (webpack-internal:///./node_modules/next/dist/client/index.js:189:11)
+    at Root (webpack-internal:///./node_modules/next/dist/client/index.js:413:11) @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[   75408ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///./node_modules/react-dom/cjs/react-dom.development.js:29889
+[   75463ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/login:0
+[   75464ms] [LOG] [HMR] connected @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:38
+[   77335ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///./node_modules/react-dom/cjs/react-dom.development.js:29889
+[   77373ms] [LOG] [HMR] connected @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:38
+[  112609ms] [ERROR] Failed to load resource: the server responded with a status of 409 (Conflict) @ http://localhost:3000/api/perfil:0
+[  113516ms] [ERROR] Failed to load resource: the server responded with a status of 409 (Conflict) @ http://localhost:3000/api/perfil:0
+[  113643ms] [ERROR] Failed to load resource: the server responded with a status of 409 (Conflict) @ http://localhost:3000/api/perfil:0
+[  118940ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///./node_modules/react-dom/cjs/react-dom.development.js:29889
+[  118962ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/login:0
+[  118963ms] [LOG] [HMR] connected @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:38

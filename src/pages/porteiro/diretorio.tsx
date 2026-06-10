@@ -2,7 +2,7 @@ import { GetServerSideProps } from "next";
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/lib/auth";
 import AppShell from "@/components/layout/AppShell";
-import { Phone, Package, Building2, Search } from "lucide-react";
+import { Phone, Package, Building2, Search, Bike } from "lucide-react";
 import { useState } from "react";
 
 interface EntregaPendente {
@@ -18,6 +18,7 @@ interface Morador {
   apartamento: string | null;
   bloco: string | null;
   telefone: string | null;
+  codigoIfood: string | null;
   fotoUrl: string | null;
   entregas: EntregaPendente[];
 }
@@ -115,6 +116,18 @@ export default function DiretorioPorteiro({ moradores }: Props) {
                   )}
                 </div>
 
+                {/* Código iFood */}
+                <div className="flex items-center gap-2">
+                  <Bike className="w-3.5 h-3.5 text-rose-400 flex-shrink-0" />
+                  {m.codigoIfood ? (
+                    <span className="font-mono font-bold text-sm tracking-widest text-rose-600 bg-rose-50 border border-rose-100 px-2 py-0.5 rounded-lg">
+                      {m.codigoIfood}
+                    </span>
+                  ) : (
+                    <span className="text-xs text-slate-400 italic">Sem código iFood</span>
+                  )}
+                </div>
+
                 {/* Entregas pendentes */}
                 {m.entregas.length > 0 && (
                   <div className="border-t border-slate-50 pt-3 space-y-2">
@@ -164,13 +177,14 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   const { prisma } = await import("@/lib/prisma");
 
   const moradores = await prisma.user.findMany({
-    where: { condoId: session.user.condoId, perfil: "MORADOR", ativo: true },
+    where: { condoId: session.user.condoId, perfil: { in: ["MORADOR", "SINDICO"] }, ativo: true },
     select: {
       id: true,
       name: true,
       apartamento: true,
       bloco: true,
       telefone: true,
+      codigoIfood: true,
       fotoUrl: true,
       entregasRecebidas: {
         where: { status: "AGUARDANDO_RETIRADA" },
@@ -189,6 +203,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
         apartamento: m.apartamento,
         bloco: m.bloco,
         telefone: m.telefone,
+        codigoIfood: m.codigoIfood,
         fotoUrl: m.fotoUrl,
         entregas: m.entregasRecebidas.map((e) => ({
           id: e.id,

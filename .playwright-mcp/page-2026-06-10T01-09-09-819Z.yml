@@ -1,0 +1,131 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - complementary [ref=e4]:
+        - generic [ref=e6]:
+          - img [ref=e9]
+          - generic [ref=e14]:
+            - paragraph [ref=e15]: Condomínio
+            - paragraph [ref=e16]: Gestão Residencial
+        - navigation [ref=e17]:
+          - paragraph [ref=e18]: Menu
+          - link "Dashboard" [ref=e19] [cursor=pointer]:
+            - /url: /dashboard
+            - generic [ref=e20]:
+              - img [ref=e21]
+              - generic [ref=e26]: Dashboard
+          - link "Avisos" [ref=e28] [cursor=pointer]:
+            - /url: /avisos
+            - generic [ref=e29]:
+              - img [ref=e30]
+              - generic [ref=e33]: Avisos
+          - link "Ocorrências" [ref=e34] [cursor=pointer]:
+            - /url: /ocorrencias
+            - generic [ref=e35]:
+              - img [ref=e36]
+              - generic [ref=e38]: Ocorrências
+          - link "Visitantes" [ref=e39] [cursor=pointer]:
+            - /url: /visitantes
+            - generic [ref=e40]:
+              - img [ref=e41]
+              - generic [ref=e46]: Visitantes
+          - link "Entregas" [ref=e47] [cursor=pointer]:
+            - /url: /entregas
+            - generic [ref=e48]:
+              - img [ref=e49]
+              - generic [ref=e53]: Entregas
+          - link "Diretório" [ref=e54] [cursor=pointer]:
+            - /url: /porteiro/diretorio
+            - generic [ref=e55]:
+              - img [ref=e56]
+              - generic [ref=e60]: Diretório
+          - link "Comunidade" [ref=e61] [cursor=pointer]:
+            - /url: /comunidade
+            - generic [ref=e62]:
+              - img [ref=e63]
+              - generic [ref=e67]: Comunidade
+          - link "Meu Perfil" [ref=e68] [cursor=pointer]:
+            - /url: /perfil
+            - generic [ref=e69]:
+              - img [ref=e70]
+              - generic [ref=e74]: Meu Perfil
+        - generic [ref=e76]:
+          - generic [ref=e79]: J
+          - generic [ref=e80]:
+            - paragraph [ref=e81]: João Porteiro
+            - generic [ref=e82]: Porteiro
+          - button "Sair" [ref=e83] [cursor=pointer]:
+            - img [ref=e84]
+      - generic [ref=e87]:
+        - banner [ref=e88]:
+          - heading "Dashboard" [level=1] [ref=e90]
+          - button "Sair" [ref=e92] [cursor=pointer]:
+            - img
+            - text: Sair
+        - main [ref=e93]:
+          - generic [ref=e94]:
+            - generic [ref=e96]:
+              - generic [ref=e97]:
+                - paragraph [ref=e98]: Boa noite,
+                - heading "Olá João!" [level=2] [ref=e99]
+                - paragraph [ref=e100]: terça-feira, 9 de junho
+                - paragraph [ref=e101]: Aqui está o painel da portaria.
+              - img [ref=e103]
+            - generic [ref=e106]:
+              - heading "Resumo" [level=3] [ref=e107]
+              - generic [ref=e108]:
+                - generic [ref=e109]:
+                  - generic [ref=e110]:
+                    - img [ref=e112]
+                    - generic [ref=e117]:
+                      - img [ref=e118]
+                      - text: ativo
+                  - paragraph [ref=e121]: "1"
+                  - paragraph [ref=e122]: Visitantes hoje
+                - generic [ref=e123]:
+                  - generic [ref=e124]:
+                    - img [ref=e126]
+                    - generic [ref=e130]:
+                      - img [ref=e131]
+                      - text: ativo
+                  - paragraph [ref=e134]: "1"
+                  - paragraph [ref=e135]: Entregas aguardando
+            - generic [ref=e136]:
+              - generic [ref=e137]:
+                - heading "Ações Rápidas" [level=3] [ref=e138]
+                - img [ref=e139]
+              - generic [ref=e140]:
+                - link "Reg. Entrega Nova encomenda recebida" [ref=e141] [cursor=pointer]:
+                  - /url: /entregas/registrar
+                  - generic [ref=e142]:
+                    - img [ref=e144]
+                    - generic [ref=e148]:
+                      - paragraph [ref=e149]: Reg. Entrega
+                      - paragraph [ref=e150]: Nova encomenda recebida
+                    - img [ref=e151]
+                - link "Visitantes Autorizados hoje" [ref=e153] [cursor=pointer]:
+                  - /url: /visitantes
+                  - generic [ref=e154]:
+                    - img [ref=e156]
+                    - generic [ref=e161]:
+                      - paragraph [ref=e162]: Visitantes
+                      - paragraph [ref=e163]: Autorizados hoje
+                    - img [ref=e164]
+                - link "Diretório Lista de moradores" [ref=e166] [cursor=pointer]:
+                  - /url: /porteiro/diretorio
+                  - generic [ref=e167]:
+                    - img [ref=e169]
+                    - generic [ref=e173]:
+                      - paragraph [ref=e174]: Diretório
+                      - paragraph [ref=e175]: Lista de moradores
+                    - img [ref=e176]
+                - link "Nova Ocorrência Registrar problema" [ref=e178] [cursor=pointer]:
+                  - /url: /ocorrencias/nova
+                  - generic [ref=e179]:
+                    - img [ref=e181]
+                    - generic [ref=e183]:
+                      - paragraph [ref=e184]: Nova Ocorrência
+                      - paragraph [ref=e185]: Registrar problema
+                    - img [ref=e186]
+    - region "Notifications alt+T"
+  - alert [ref=e188]

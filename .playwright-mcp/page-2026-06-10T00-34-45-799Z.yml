@@ -1,0 +1,65 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - img [ref=e6]
+        - generic [ref=e8]:
+          - img [ref=e11]
+          - heading "Gestão de Condomínio" [level=1] [ref=e16]:
+            - text: Gestão de
+            - text: Condomínio
+          - paragraph [ref=e17]: Avisos, reservas, ocorrências, visitantes e entregas — tudo num só lugar.
+        - generic [ref=e18]:
+          - generic [ref=e21]:
+            - paragraph [ref=e22]: Moradores
+            - paragraph [ref=e23]: Acompanhe tudo do seu apartamento
+          - generic [ref=e26]:
+            - paragraph [ref=e27]: Síndico
+            - paragraph [ref=e28]: Gerencie o condomínio com facilidade
+          - generic [ref=e31]:
+            - paragraph [ref=e32]: Portaria
+            - paragraph [ref=e33]: Controle de acesso e entregas
+      - generic [ref=e35]:
+        - generic [ref=e36]:
+          - button "Entrar" [active] [ref=e37] [cursor=pointer]
+          - button "Criar conta" [ref=e38] [cursor=pointer]
+        - generic [ref=e39]:
+          - heading "Bem-vindo de volta" [level=2] [ref=e149]
+          - paragraph [ref=e41]: Entre com suas credenciais de acesso
+        - generic [ref=e150]:
+          - button "Entrar com Google" [ref=e151] [cursor=pointer]:
+            - img [ref=e152]
+            - text: Entrar com Google
+          - generic [ref=e159]: ou
+          - generic [ref=e161]:
+            - generic [ref=e162]:
+              - generic [ref=e163]: E-mail, CPF ou celular
+              - generic [ref=e164]:
+                - img [ref=e165]
+                - textbox "E-mail, CPF ou celular" [ref=e168]: porteiro@condo.com
+            - generic [ref=e169]:
+              - generic [ref=e170]:
+                - generic [ref=e171]: Senha
+                - link "Esqueci minha senha" [ref=e172] [cursor=pointer]:
+                  - /url: /esqueci-senha
+              - generic [ref=e173]:
+                - img [ref=e174]
+                - textbox "Senha" [ref=e177]:
+                  - /placeholder: ••••••••
+                  - text: senha123
+            - button "Entrar" [ref=e178] [cursor=pointer]:
+              - text: Entrar
+              - img
+            - generic [ref=e179]:
+              - paragraph [ref=e180]: Acesso de teste
+              - generic [ref=e181]:
+                - generic [ref=e182]: "Síndico:"
+                - generic [ref=e183]: sindico@condo.com
+                - generic [ref=e184]: "Morador:"
+                - generic [ref=e185]: morador@condo.com
+                - generic [ref=e186]: "Porteiro:"
+                - generic [ref=e187]: porteiro@condo.com
+                - generic [ref=e188]: "Senha:"
+                - generic [ref=e189]: senha123
+    - region "Notifications alt+T"
+  - alert [ref=e82]

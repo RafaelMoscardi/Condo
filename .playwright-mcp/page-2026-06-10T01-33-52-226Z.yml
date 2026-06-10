@@ -1,0 +1,90 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e139]:
+      - complementary [ref=e140]:
+        - generic [ref=e142]:
+          - img [ref=e145]
+          - generic [ref=e150]:
+            - paragraph [ref=e151]: Condomínio
+            - paragraph [ref=e152]: Gestão Residencial
+        - navigation [ref=e153]:
+          - paragraph [ref=e154]: Menu
+          - link "Dashboard" [ref=e155] [cursor=pointer]:
+            - /url: /dashboard
+            - generic [ref=e156]:
+              - img [ref=e157]
+              - generic [ref=e162]: Dashboard
+          - link "Avisos" [ref=e163] [cursor=pointer]:
+            - /url: /avisos
+            - generic [ref=e164]:
+              - img [ref=e165]
+              - generic [ref=e168]: Avisos
+          - link "Ocorrências" [ref=e169] [cursor=pointer]:
+            - /url: /ocorrencias
+            - generic [ref=e170]:
+              - img [ref=e171]
+              - generic [ref=e173]: Ocorrências
+          - link "Reservas" [ref=e174] [cursor=pointer]:
+            - /url: /reservas
+            - generic [ref=e175]:
+              - img [ref=e176]
+              - generic [ref=e178]: Reservas
+          - link "Diretório" [ref=e179] [cursor=pointer]:
+            - /url: /porteiro/diretorio
+            - generic [ref=e180]:
+              - img [ref=e181]
+              - generic [ref=e185]: Diretório
+          - link "Comunidade" [ref=e186] [cursor=pointer]:
+            - /url: /comunidade
+            - generic [ref=e187]:
+              - img [ref=e188]
+              - generic [ref=e192]: Comunidade
+          - link "Moradores" [ref=e194] [cursor=pointer]:
+            - /url: /moradores
+            - generic [ref=e195]:
+              - img [ref=e196]
+              - generic [ref=e199]: Moradores
+          - link "Meu Perfil" [ref=e200] [cursor=pointer]:
+            - /url: /perfil
+            - generic [ref=e201]:
+              - img [ref=e202]
+              - generic [ref=e206]: Meu Perfil
+        - generic [ref=e208]:
+          - generic [ref=e211]: C
+          - generic [ref=e212]:
+            - paragraph [ref=e213]: Carlos Síndico
+            - generic [ref=e214]: Síndico
+          - button "Sair" [ref=e215] [cursor=pointer]:
+            - img [ref=e216]
+      - generic [ref=e219]:
+        - banner [ref=e220]:
+          - heading "VAGA MAIS BROCANTE COBERTA DE PELO E VAP AUTOMATICA" [level=1] [ref=e222]
+          - button "Sair" [ref=e224] [cursor=pointer]:
+            - img
+            - text: Sair
+        - main [ref=e225]:
+          - generic [ref=e226]:
+            - link "Voltar às Vagas" [ref=e227] [cursor=pointer]:
+              - /url: /comunidade
+              - img [ref=e228]
+              - text: Voltar às Vagas
+            - generic [ref=e230]:
+              - generic [ref=e231]:
+                - generic [ref=e233]: Aluguel
+                - paragraph [ref=e234]: R$ 400,00/mês
+              - generic [ref=e235]:
+                - img [ref=e236]
+                - heading "VAGA MAIS BROCANTE COBERTA DE PELO E VAP AUTOMATICA" [level=1] [ref=e240]
+            - generic [ref=e241]:
+              - generic [ref=e242]: R
+              - generic [ref=e243]:
+                - paragraph [ref=e244]: Rafael Moscardi
+                - paragraph [ref=e245]: Apt 300-A
+            - generic [ref=e246]:
+              - heading "Falar com o Dono" [level=2] [ref=e247]
+              - generic [ref=e248]:
+                - paragraph [ref=e249]: Inicie a conversa com o dono da vaga.
+                - textbox "Olá! Tenho interesse nesta vaga…" [ref=e250]
+                - button "Enviar mensagem" [disabled]
+    - region "Notifications alt+T"
+  - alert [ref=e15]: VAGA MAIS BROCANTE COBERTA DE PELO E VAP AUTOMATICA

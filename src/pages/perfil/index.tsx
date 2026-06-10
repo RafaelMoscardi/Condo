@@ -7,7 +7,8 @@ import AppShell from "@/components/layout/AppShell";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Camera, X, Save, KeyRound, User, Phone, CreditCard, Home } from "lucide-react";
+import { Camera, X, Save, KeyRound, User, Phone, CreditCard, Home, Bike } from "lucide-react";
+import { cn } from "@/lib/utils";
 import { toast } from "sonner";
 
 function maskCPF(v: string) {
@@ -35,6 +36,7 @@ interface Props {
     bloco: string | null;
     cpf: string | null;
     telefone: string | null;
+    codigoIfood: string | null;
     fotoUrl: string | null;
   };
 }
@@ -48,6 +50,8 @@ export default function PerfilPage({ usuario }: Props) {
   const [bloco, setBloco] = useState(usuario.bloco ?? "");
   const [cpf, setCpf] = useState(usuario.cpf ?? "");
   const [telefone, setTelefone] = useState(usuario.telefone ?? "");
+  const [codigoIfood, setCodigoIfood] = useState(usuario.codigoIfood ?? "");
+  const [naoTemIfood, setNaoTemIfood] = useState(!usuario.codigoIfood);
   const [preview, setPreview] = useState<string | null>(usuario.fotoUrl ?? null);
   const [fotoFile, setFotoFile] = useState<File | null>(null);
 
@@ -83,6 +87,8 @@ export default function PerfilPage({ usuario }: Props) {
     fd.append("bloco", bloco);
     fd.append("cpf", cpf);
     fd.append("telefone", telefone);
+    if (!naoTemIfood && codigoIfood.trim()) fd.append("codigoIfood", codigoIfood.trim());
+    fd.append("naoTemIfood", String(naoTemIfood));
     if (senhaAtual) fd.append("senhaAtual", senhaAtual);
     if (novaSenha) fd.append("novaSenha", novaSenha);
     if (fotoFile) fd.append("foto", fotoFile);
@@ -221,6 +227,49 @@ export default function PerfilPage({ usuario }: Props) {
                 />
               </div>
             </div>
+
+            {/* Código iFood */}
+            <div className="space-y-1.5">
+              <Label className="text-xs font-medium text-slate-600 flex items-center gap-1.5">
+                <Bike className="w-3.5 h-3.5 text-rose-500" />
+                Código iFood
+              </Label>
+              <p className="text-xs text-slate-400">
+                Últimos 4 dígitos do celular no iFood — usado pelo porteiro para confirmar retirada.
+              </p>
+              {!naoTemIfood && (
+                <div className="relative">
+                  <Bike className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
+                  <Input
+                    value={codigoIfood}
+                    onChange={(e) => setCodigoIfood(e.target.value.replace(/\D/g, "").slice(0, 4))}
+                    placeholder="0000"
+                    maxLength={4}
+                    className="pl-10 font-mono tracking-widest text-base"
+                  />
+                </div>
+              )}
+              <label className="flex items-center gap-2 cursor-pointer select-none group w-fit">
+                <div
+                  onClick={() => { setNaoTemIfood(!naoTemIfood); setCodigoIfood(""); }}
+                  className={cn(
+                    "w-4 h-4 rounded border-2 flex items-center justify-center transition-colors flex-shrink-0",
+                    naoTemIfood
+                      ? "bg-slate-600 border-slate-600"
+                      : "border-slate-300 group-hover:border-slate-400"
+                  )}
+                >
+                  {naoTemIfood && (
+                    <svg className="w-2.5 h-2.5 text-white" fill="none" viewBox="0 0 12 12" stroke="currentColor" strokeWidth={2.5}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M2 6l3 3 5-5" />
+                    </svg>
+                  )}
+                </div>
+                <span className="text-xs text-slate-500 group-hover:text-slate-700 transition-colors">
+                  Não uso iFood / não tenho código
+                </span>
+              </label>
+            </div>
           </div>
 
           {/* Alterar senha */}
@@ -302,6 +351,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
       bloco: true,
       cpf: true,
       telefone: true,
+      codigoIfood: true,
       fotoUrl: true,
     },
   });

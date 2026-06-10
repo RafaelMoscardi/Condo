@@ -1,0 +1,135 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e190]:
+      - complementary [ref=e191]:
+        - generic [ref=e193]:
+          - img [ref=e196]
+          - generic [ref=e201]:
+            - paragraph [ref=e202]: Condomínio
+            - paragraph [ref=e203]: Gestão Residencial
+        - navigation [ref=e204]:
+          - paragraph [ref=e205]: Menu
+          - link "Dashboard" [ref=e206] [cursor=pointer]:
+            - /url: /dashboard
+            - generic [ref=e207]:
+              - img [ref=e208]
+              - generic [ref=e213]: Dashboard
+          - link "Avisos" [ref=e214] [cursor=pointer]:
+            - /url: /avisos
+            - generic [ref=e215]:
+              - img [ref=e216]
+              - generic [ref=e219]: Avisos
+          - link "Ocorrências" [ref=e220] [cursor=pointer]:
+            - /url: /ocorrencias
+            - generic [ref=e221]:
+              - img [ref=e222]
+              - generic [ref=e224]: Ocorrências
+          - link "Reservas" [ref=e225] [cursor=pointer]:
+            - /url: /reservas
+            - generic [ref=e226]:
+              - img [ref=e227]
+              - generic [ref=e229]: Reservas
+          - link "Diretório" [ref=e230] [cursor=pointer]:
+            - /url: /porteiro/diretorio
+            - generic [ref=e231]:
+              - img [ref=e232]
+              - generic [ref=e236]: Diretório
+          - link "Comunidade" [ref=e237] [cursor=pointer]:
+            - /url: /comunidade
+            - generic [ref=e238]:
+              - img [ref=e239]
+              - generic [ref=e243]: Comunidade
+          - link "Moradores" [ref=e244] [cursor=pointer]:
+            - /url: /moradores
+            - generic [ref=e245]:
+              - img [ref=e246]
+              - generic [ref=e249]: Moradores
+          - link "Meu Perfil" [ref=e250] [cursor=pointer]:
+            - /url: /perfil
+            - generic [ref=e251]:
+              - img [ref=e252]
+              - generic [ref=e256]: Meu Perfil
+        - generic [ref=e259]:
+          - generic [ref=e262]: C
+          - generic [ref=e263]:
+            - paragraph [ref=e264]: Carlos Síndico
+            - generic [ref=e265]: Síndico
+          - button "Sair" [ref=e266] [cursor=pointer]:
+            - img [ref=e267]
+      - generic [ref=e270]:
+        - banner [ref=e271]:
+          - heading "Meu Perfil" [level=1] [ref=e273]
+          - button "Sair" [ref=e275] [cursor=pointer]:
+            - img
+            - text: Sair
+        - main [ref=e276]:
+          - generic [ref=e277]:
+            - generic [ref=e278]:
+              - heading "Meu Perfil" [level=2] [ref=e279]
+              - paragraph [ref=e280]: sindico@condo.com
+            - generic [ref=e281]:
+              - generic [ref=e282]:
+                - paragraph [ref=e283]: Foto de Perfil
+                - generic [ref=e284]:
+                  - generic [ref=e287]: C
+                  - generic [ref=e288]:
+                    - button "Alterar foto" [ref=e289] [cursor=pointer]:
+                      - img
+                      - text: Alterar foto
+                    - paragraph [ref=e290]: JPG, PNG — máx. 5 MB
+              - generic [ref=e291]:
+                - paragraph [ref=e292]: Dados Pessoais
+                - generic [ref=e293]:
+                  - generic [ref=e294]: Nome completo
+                  - generic [ref=e295]:
+                    - img [ref=e296]
+                    - textbox [ref=e299]: Carlos Síndico
+                - generic [ref=e300]:
+                  - generic [ref=e301]:
+                    - generic [ref=e302]: Bloco
+                    - generic [ref=e303]:
+                      - img [ref=e304]
+                      - 'textbox "Ex: A" [ref=e307]': A
+                  - generic [ref=e308]:
+                    - generic [ref=e309]: Apartamento
+                    - generic [ref=e310]:
+                      - img [ref=e311]
+                      - 'textbox "Ex: 101" [ref=e314]': "102"
+                - generic [ref=e315]:
+                  - generic [ref=e316]: CPF
+                  - generic [ref=e317]:
+                    - img [ref=e318]
+                    - textbox "000.000.000-00" [ref=e320]
+                - generic [ref=e321]:
+                  - generic [ref=e322]: Telefone com DDD
+                  - generic [ref=e323]:
+                    - img [ref=e324]
+                    - textbox "(11) 99999-9999" [ref=e326]
+              - generic [ref=e327]:
+                - paragraph [ref=e328]: Alterar Senha
+                - paragraph [ref=e329]: Deixe em branco para manter a senha atual.
+                - generic [ref=e330]:
+                  - generic [ref=e331]: Senha atual
+                  - generic [ref=e332]:
+                    - img [ref=e333]
+                    - textbox "••••••••" [ref=e336]
+                - generic [ref=e337]:
+                  - generic [ref=e338]:
+                    - generic [ref=e339]: Nova senha
+                    - generic [ref=e340]:
+                      - img [ref=e341]
+                      - textbox "mín. 6 caracteres" [ref=e344]
+                  - generic [ref=e345]:
+                    - generic [ref=e346]: Confirmar nova senha
+                    - generic [ref=e347]:
+                      - img [ref=e348]
+                      - textbox "••••••••" [ref=e351]
+              - button "Salvar alterações" [ref=e352] [cursor=pointer]:
+                - img
+                - text: Salvar alterações
+    - region "Notifications alt+T":
+      - list:
+        - listitem [ref=e353]:
+          - img [ref=e355]
+          - generic [ref=e358]: Perfil atualizado!
+  - alert [ref=e82]: Meu Perfil

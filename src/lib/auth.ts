@@ -87,6 +87,8 @@ export const authOptions: NextAuthOptions = {
           condoId: user.condoId,
           apartamento: user.apartamento,
           bloco: user.bloco,
+          telefone: user.telefone,
+          cpf: user.cpf,
         };
       },
     }),
@@ -106,38 +108,39 @@ export const authOptions: NextAuthOptions = {
       if (trigger === "update") {
         const dbUser = await prisma.user.findUnique({
           where: { id: token.id as string },
-          select: { apartamento: true, bloco: true, perfil: true, condoId: true },
+          select: { apartamento: true, bloco: true, telefone: true, cpf: true, perfil: true, condoId: true },
         });
         if (dbUser) {
           token.apartamento = dbUser.apartamento;
           token.bloco = dbUser.bloco;
-          token.perfilCompleto = !!(dbUser.apartamento && dbUser.bloco);
+          token.perfilCompleto = ["PORTEIRO", "ADMINISTRADORA"].includes(dbUser.perfil) || !!(dbUser.apartamento && dbUser.bloco && dbUser.telefone && dbUser.cpf);
         }
         return token;
       }
 
       if (user) {
         if (account?.provider === "credentials") {
-          const u = user as typeof user & { perfil: string; condoId: string; apartamento: string | null; bloco: string | null };
+          const u = user as typeof user & { perfil: string; condoId: string; apartamento: string | null; bloco: string | null; telefone: string | null; cpf: string | null };
           token.id = u.id;
           token.perfil = u.perfil;
           token.condoId = u.condoId;
           token.apartamento = u.apartamento;
           token.bloco = u.bloco;
-          token.perfilCompleto = !!(u.apartamento && u.bloco);
+          token.perfilCompleto = ["PORTEIRO", "ADMINISTRADORA"].includes(u.perfil) || !!(u.apartamento && u.bloco && u.telefone && u.cpf);
         } else {
           // OAuth: fetch custom fields from DB
-          const dbUser = await prisma.user.findUnique({
-            where: { id: user.id },
-            select: { id: true, perfil: true, condoId: true, apartamento: true, bloco: true },
-          });
+          const lookupId = user.id || token.sub;
+          const dbUser = lookupId ? await prisma.user.findUnique({
+            where: { id: lookupId },
+            select: { id: true, perfil: true, condoId: true, apartamento: true, bloco: true, telefone: true, cpf: true },
+          }) : null;
           if (dbUser) {
             token.id = dbUser.id;
             token.perfil = dbUser.perfil;
             token.condoId = dbUser.condoId;
             token.apartamento = dbUser.apartamento;
             token.bloco = dbUser.bloco;
-            token.perfilCompleto = !!(dbUser.apartamento && dbUser.bloco);
+            token.perfilCompleto = ["PORTEIRO", "ADMINISTRADORA"].includes(dbUser.perfil) || !!(dbUser.apartamento && dbUser.bloco && dbUser.telefone && dbUser.cpf);
           }
         }
       }
@@ -145,7 +148,7 @@ export const authOptions: NextAuthOptions = {
     },
     async session({ session, token }) {
       if (session.user) {
-        session.user.id = token.id as string;
+        session.user.id = (token.id ?? token.sub) as string;
         session.user.perfil = token.perfil as string;
         session.user.condoId = token.condoId as string;
         session.user.apartamento = token.apartamento as string | null;

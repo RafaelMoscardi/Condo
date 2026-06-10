@@ -6,6 +6,7 @@ import AppShell from "@/components/layout/AppShell";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState, useEffect, useRef, useCallback } from "react";
+import { ConfirmDialog } from "@/components/ui/confirm-dialog";
 import { ChevronLeft, Users, Send, Trash2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
@@ -320,6 +321,7 @@ type Props = {
 
 export default function AnuncioDetailPage({ anuncio, userId }: Props) {
   const router = useRouter();
+  const [confirmOpen, setConfirmOpen] = useState(false);
   const isOwner = anuncio.morador.id === userId;
   const stCfg = STATUS_CFG[anuncio.status] ?? STATUS_CFG.DISPONIVEL;
   const tpCfg = TIPO_CFG[anuncio.tipo] ?? TIPO_CFG.VENDA;
@@ -337,12 +339,12 @@ export default function AnuncioDetailPage({ anuncio, userId }: Props) {
   };
 
   const handleDelete = async () => {
-    if (!confirm("Remover este anúncio?")) return;
     const res = await fetch(`/api/comunidade/loja/${anuncio.id}`, { method: "DELETE" });
     if (res.ok) {
       toast.success("Anúncio removido");
       router.push("/comunidade");
     }
+    setConfirmOpen(false);
   };
 
   return (
@@ -422,7 +424,7 @@ export default function AnuncioDetailPage({ anuncio, userId }: Props) {
                 Reanunciar
               </Button>
             )}
-            <Button size="sm" variant="destructive" onClick={handleDelete}>
+            <Button size="sm" variant="destructive" onClick={() => setConfirmOpen(true)}>
               <Trash2 className="w-3.5 h-3.5 mr-1" /> Remover Anúncio
             </Button>
           </div>
@@ -439,6 +441,15 @@ export default function AnuncioDetailPage({ anuncio, userId }: Props) {
           )}
         </div>
       </div>
+
+      <ConfirmDialog
+        open={confirmOpen}
+        title="Remover anúncio"
+        message="Remover este anúncio permanentemente? Esta ação não pode ser desfeita."
+        confirmLabel="Remover"
+        onConfirm={handleDelete}
+        onCancel={() => setConfirmOpen(false)}
+      />
     </AppShell>
   );
 }

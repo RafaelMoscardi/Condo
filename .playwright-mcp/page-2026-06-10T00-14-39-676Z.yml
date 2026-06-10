@@ -1,0 +1,101 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - complementary [ref=e8]:
+        - generic [ref=e10]:
+          - img [ref=e12]
+          - generic [ref=e16]:
+            - paragraph [ref=e17]: Condomínio
+            - paragraph [ref=e18]: Gestão Residencial
+        - navigation [ref=e19]:
+          - link "Dashboard" [ref=e20] [cursor=pointer]:
+            - /url: /dashboard
+            - generic [ref=e21]:
+              - img [ref=e22]
+              - generic [ref=e27]: Dashboard
+          - link "Avisos" [ref=e28] [cursor=pointer]:
+            - /url: /avisos
+            - generic [ref=e29]:
+              - img [ref=e30]
+              - generic [ref=e33]: Avisos
+          - link "Ocorrências" [ref=e34] [cursor=pointer]:
+            - /url: /ocorrencias
+            - generic [ref=e35]:
+              - img [ref=e36]
+              - generic [ref=e38]: Ocorrências
+          - link "Reservas" [ref=e39] [cursor=pointer]:
+            - /url: /reservas
+            - generic [ref=e40]:
+              - img [ref=e41]
+              - generic [ref=e43]: Reservas
+          - link "Visitantes" [ref=e44] [cursor=pointer]:
+            - /url: /visitantes
+            - generic [ref=e45]:
+              - img [ref=e46]
+              - generic [ref=e51]: Visitantes
+          - link "Entregas" [ref=e52] [cursor=pointer]:
+            - /url: /entregas
+            - generic [ref=e53]:
+              - img [ref=e54]
+              - generic [ref=e58]: Entregas
+          - link "Comunidade" [ref=e59] [cursor=pointer]:
+            - /url: /comunidade
+            - generic [ref=e60]:
+              - img [ref=e61]
+              - generic [ref=e65]: Comunidade
+          - link "Meu Perfil" [ref=e66] [cursor=pointer]:
+            - /url: /perfil
+            - generic [ref=e67]:
+              - img [ref=e68]
+              - generic [ref=e72]: Meu Perfil
+        - generic [ref=e74]:
+          - generic [ref=e76]: R
+          - generic [ref=e77]:
+            - paragraph [ref=e78]: Rafael Moscardi
+            - paragraph [ref=e79]: Morador
+      - generic [ref=e80]:
+        - banner [ref=e81]:
+          - heading "Condomínio" [level=1] [ref=e82]
+          - button "Sair" [ref=e83] [cursor=pointer]:
+            - img
+            - text: Sair
+        - main [ref=e84]:
+          - generic [ref=e85]:
+            - generic [ref=e86]:
+              - heading "Comunidade" [level=1] [ref=e87]
+              - paragraph [ref=e88]: Conecte-se com os moradores do condomínio
+            - generic [ref=e89]:
+              - button "Chat" [ref=e90] [cursor=pointer]:
+                - img [ref=e91]
+                - text: Chat
+              - button "Vagas de Garagem" [active] [ref=e93] [cursor=pointer]:
+                - img [ref=e94]
+                - text: Vagas de Garagem
+              - button "Loja" [ref=e98] [cursor=pointer]:
+                - img [ref=e99]
+                - text: Loja
+            - generic [ref=e110]:
+              - generic [ref=e111]:
+                - generic [ref=e112]:
+                  - button "Disponíveis" [ref=e113] [cursor=pointer]
+                  - button "Todas" [ref=e114] [cursor=pointer]
+                - button "Anunciar Vaga" [ref=e115] [cursor=pointer]:
+                  - img
+                  - text: Anunciar Vaga
+              - generic [ref=e117]:
+                - generic [ref=e118]:
+                  - generic [ref=e119]:
+                    - generic [ref=e120]: Aluguel
+                    - generic [ref=e121]: Indisponível
+                  - generic [ref=e122]: R$ 150,00/mês
+                - heading "Vaga coberta bloco A" [level=3] [ref=e123]
+                - generic [ref=e124]:
+                  - generic [ref=e125]: R
+                  - generic [ref=e126]: Rafael Moscardi
+                  - generic [ref=e127]: · Apt 300-A
+                - generic [ref=e128]:
+                  - button "Reativar" [ref=e129] [cursor=pointer]
+                  - button [ref=e130] [cursor=pointer]:
+                    - img
+    - region "Notifications alt+T"
+  - alert [ref=e7]

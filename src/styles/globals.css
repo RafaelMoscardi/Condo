@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -35,17 +35,80 @@
   body {
     @apply bg-slate-50 text-foreground;
     font-family: 'Plus Jakarta Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Smoother taps on mobile */
+  button, a {
+    -webkit-tap-highlight-color: transparent;
   }
 }
 
 @layer utilities {
+  /* ── Sidebar ──────────────────────────────── */
   .sidebar-item {
-    @apply flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-all duration-150 cursor-pointer;
+    @apply flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-all duration-150 cursor-pointer;
   }
   .sidebar-item-inactive {
     @apply text-slate-400 hover:text-white hover:bg-white/10;
   }
   .sidebar-item-active {
-    @apply bg-indigo-600 text-white shadow-lg shadow-indigo-900/30;
+    @apply text-white shadow-lg shadow-indigo-900/40;
+    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
   }
+
+  /* ── Mobile bottom nav ────────────────────── */
+  .mobile-nav-item {
+    @apply flex flex-col items-center justify-center gap-0.5 flex-1 py-1.5 rounded-xl transition-all duration-150 select-none;
+  }
+
+  /* ── Glass card ───────────────────────────── */
+  .glass-card {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.55);
+  }
+
+  /* ── Gradient text ────────────────────────── */
+  .gradient-text {
+    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+/* ── Animations ───────────────────────────────── */
+@keyframes page-enter {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.page-enter {
+  animation: page-enter 0.22s ease-out;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-14px); }
+}
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+.animate-fade-in {
+  animation: fade-in 0.3s ease-out;
+}
+
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-slide-up {
+  animation: slide-up 0.3s ease-out;
 }

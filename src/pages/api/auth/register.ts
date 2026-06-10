@@ -29,6 +29,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   const bloco = get("bloco").trim() || null;
   const cpf = get("cpf").trim() || null;
   const telefone = get("telefone").trim() || null;
+  const naoTemIfood = get("naoTemIfood") === "true";
+  const codigoIfood = naoTemIfood ? null : (get("codigoIfood").trim() || null);
 
   if (!name || !email || !password) {
     return res.status(400).json({ erro: "Nome, e-mail e senha são obrigatórios" });
@@ -36,28 +38,33 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   if (password.length < 6) {
     return res.status(400).json({ erro: "Senha deve ter no mínimo 6 caracteres" });
   }
-  if (cpf) {
-    const d = cpf.replace(/\D/g, "");
-    let cpfValido = d.length === 11 && !/^(\d)\1{10}$/.test(d);
-    if (cpfValido) {
+  if (!cpf) {
+    return res.status(400).json({ erro: "CPF é obrigatório" });
+  }
+  const cpfDigits = cpf.replace(/\D/g, "");
+  {
+    let ok = cpfDigits.length === 11 && !/^(\d)\1{10}$/.test(cpfDigits);
+    if (ok) {
       let sum = 0;
-      for (let i = 0; i < 9; i++) sum += parseInt(d[i]) * (10 - i);
+      for (let i = 0; i < 9; i++) sum += parseInt(cpfDigits[i]) * (10 - i);
       let r = (sum * 10) % 11; if (r >= 10) r = 0;
-      cpfValido = r === parseInt(d[9]);
-      if (cpfValido) {
+      ok = r === parseInt(cpfDigits[9]);
+      if (ok) {
         sum = 0;
-        for (let i = 0; i < 10; i++) sum += parseInt(d[i]) * (11 - i);
+        for (let i = 0; i < 10; i++) sum += parseInt(cpfDigits[i]) * (11 - i);
         r = (sum * 10) % 11; if (r >= 10) r = 0;
-        cpfValido = r === parseInt(d[10]);
+        ok = r === parseInt(cpfDigits[10]);
       }
     }
-    if (!cpfValido) return res.status(400).json({ erro: "CPF inválido" });
+    if (!ok) return res.status(400).json({ erro: "CPF inválido" });
   }
 
-  const existente = await prisma.user.findUnique({ where: { email } });
-  if (existente) {
-    return res.status(409).json({ erro: "E-mail já cadastrado" });
-  }
+  const [existente, cpfExistente] = await Promise.all([
+    prisma.user.findUnique({ where: { email } }),
+    prisma.user.findUnique({ where: { cpf } }),
+  ]);
+  if (existente) return res.status(409).json({ erro: "E-mail já cadastrado" });
+  if (cpfExistente) return res.status(409).json({ erro: "CPF já cadastrado" });
 
   const condo = await prisma.condo.findFirst();
   if (!condo) {
@@ -88,6 +95,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       bloco,
       cpf,
       telefone,
+      codigoIfood,
       fotoUrl,
       condoId: condo.id,
     },

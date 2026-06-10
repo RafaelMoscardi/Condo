@@ -22,13 +22,19 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     if (!autorizacao || autorizacao.morador.condoId !== session.user.condoId) {
       return res.status(404).json({ erro: "Autorização não encontrada" });
     }
-    const visita = await prisma.visitaRegistrada.create({
-      data: {
-        autorizacaoId,
-        porteiroId: session.user.id,
-        observacoes: observacoes ?? null,
-      },
-    });
+    const [visita] = await prisma.$transaction([
+      prisma.visitaRegistrada.create({
+        data: {
+          autorizacaoId,
+          porteiroId: session.user.id,
+          observacoes: observacoes ?? null,
+        },
+      }),
+      prisma.autorizacaoVisitante.update({
+        where: { id: autorizacaoId },
+        data: { ativa: false },
+      }),
+    ]);
     return res.status(201).json(visita);
   }
 

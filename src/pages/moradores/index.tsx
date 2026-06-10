@@ -3,8 +3,10 @@ import { getServerSession } from "next-auth";
 import { authOptions } from "@/lib/auth";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { useState } from "react";
 import AppShell from "@/components/layout/AppShell";
 import { Button } from "@/components/ui/button";
+import { ConfirmDialog } from "@/components/ui/confirm-dialog";
 import { toast } from "sonner";
 import { Plus, Users, Building2, UserCheck, Briefcase, CheckCircle, XCircle, Clock } from "lucide-react";
 
@@ -29,6 +31,7 @@ interface Props { usuarios: Usuario[] }
 
 export default function Moradores({ usuarios }: Props) {
   const router = useRouter();
+  const [confirm, setConfirm] = useState<{ message: string; title: string; onConfirm: () => void } | null>(null);
 
   const pendentes = usuarios.filter(u => !u.ativo);
   const ativos = usuarios.filter(u => u.ativo);
@@ -56,24 +59,36 @@ export default function Moradores({ usuarios }: Props) {
     });
   };
 
-  const rejeitar = async (u: Usuario) => {
-    if (!confirm(`Remover o cadastro de ${u.name}?`)) return;
-    const res = await fetch(`/api/users/${u.id}`, { method: "DELETE" });
-    if (res.ok) {
-      toast.success("Cadastro removido");
-      router.replace(router.asPath);
-    } else {
-      toast.error("Erro ao remover");
-    }
+  const rejeitar = (u: Usuario) => {
+    setConfirm({
+      title: "Remover cadastro",
+      message: `Remover o cadastro de ${u.name}? Esta ação não pode ser desfeita.`,
+      onConfirm: async () => {
+        const res = await fetch(`/api/users/${u.id}`, { method: "DELETE" });
+        if (res.ok) {
+          toast.success("Cadastro removido");
+          router.replace(router.asPath);
+        } else {
+          toast.error("Erro ao remover");
+        }
+        setConfirm(null);
+      },
+    });
   };
 
   const toggleAtivo = (u: Usuario) => {
     const acao = u.ativo ? "Desativar" : "Reativar";
-    if (!confirm(`${acao} o acesso de ${u.name}?`)) return;
-    toast.promise(patch(u.id, { ativo: !u.ativo }), {
-      loading: `${acao}ndo...`,
-      success: `Acesso ${u.ativo ? "desativado" : "reativado"}!`,
-      error: "Erro",
+    setConfirm({
+      title: `${acao} acesso`,
+      message: `${acao} o acesso de ${u.name}?`,
+      onConfirm: () => {
+        toast.promise(patch(u.id, { ativo: !u.ativo }), {
+          loading: `${acao}ndo...`,
+          success: `Acesso ${u.ativo ? "desativado" : "reativado"}!`,
+          error: "Erro",
+        });
+        setConfirm(null);
+      },
     });
   };
 
@@ -203,6 +218,15 @@ export default function Moradores({ usuarios }: Props) {
           </div>
         )}
       </div>
+
+      <ConfirmDialog
+        open={confirm !== null}
+        title={confirm?.title ?? "Confirmar"}
+        message={confirm?.message ?? ""}
+        confirmLabel="Confirmar"
+        onConfirm={() => confirm?.onConfirm()}
+        onCancel={() => setConfirm(null)}
+      />
     </AppShell>
   );
 }

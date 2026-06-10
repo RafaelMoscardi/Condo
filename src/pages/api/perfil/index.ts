@@ -32,10 +32,35 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   const bloco = get("bloco").trim() || null;
   const cpf = get("cpf").trim() || null;
   const telefone = get("telefone").trim() || null;
+  const naoTemIfood = get("naoTemIfood") === "true";
+  const codigoIfood = naoTemIfood ? null : (get("codigoIfood").trim() || null);
   const senhaAtual = get("senhaAtual");
   const novaSenha = get("novaSenha");
 
   if (!name) return res.status(400).json({ erro: "Nome é obrigatório" });
+
+  if (cpf) {
+    const d = cpf.replace(/\D/g, "");
+    let ok = d.length === 11 && !/^(\d)\1{10}$/.test(d);
+    if (ok) {
+      let sum = 0;
+      for (let i = 0; i < 9; i++) sum += parseInt(d[i]) * (10 - i);
+      let r = (sum * 10) % 11; if (r >= 10) r = 0;
+      ok = r === parseInt(d[9]);
+      if (ok) {
+        sum = 0;
+        for (let i = 0; i < 10; i++) sum += parseInt(d[i]) * (11 - i);
+        r = (sum * 10) % 11; if (r >= 10) r = 0;
+        ok = r === parseInt(d[10]);
+      }
+    }
+    if (!ok) return res.status(400).json({ erro: "CPF inválido" });
+
+    const cpfExistente = await prisma.user.findUnique({ where: { cpf } });
+    if (cpfExistente && cpfExistente.id !== session.user.id) {
+      return res.status(409).json({ erro: "CPF já cadastrado por outro usuário" });
+    }
+  }
 
   const usuario = await prisma.user.findUnique({ where: { id: session.user.id } });
   if (!usuario) return res.status(404).json({ erro: "Usuário não encontrado" });
@@ -78,6 +103,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       bloco,
       cpf,
       telefone,
+      codigoIfood,
       ...(fotoUrl !== undefined && { fotoUrl }),
       ...(passwordHash !== undefined && { password: passwordHash }),
     },

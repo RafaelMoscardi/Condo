@@ -4,8 +4,22 @@ import { useSession, signOut } from "next-auth/react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Building2, Home, Phone, CreditCard, Camera, X } from "lucide-react";
+import { Building2, Home, Phone, CreditCard, Camera, X, Bike } from "lucide-react";
 import { toast } from "sonner";
+import { cn } from "@/lib/utils";
+
+function validarCPF(cpf: string): boolean {
+  const d = cpf.replace(/\D/g, "");
+  if (d.length !== 11 || /^(\d)\1{10}$/.test(d)) return false;
+  let sum = 0;
+  for (let i = 0; i < 9; i++) sum += parseInt(d[i]) * (10 - i);
+  let r = (sum * 10) % 11; if (r === 10 || r === 11) r = 0;
+  if (r !== parseInt(d[9])) return false;
+  sum = 0;
+  for (let i = 0; i < 10; i++) sum += parseInt(d[i]) * (11 - i);
+  r = (sum * 10) % 11; if (r === 10 || r === 11) r = 0;
+  return r === parseInt(d[10]);
+}
 
 function maskCPF(v: string) {
   return v.replace(/\D/g, "").slice(0, 11)
@@ -31,6 +45,8 @@ export default function CompletarPerfil() {
   const [apartamento, setApartamento] = useState("");
   const [telefone, setTelefone] = useState("");
   const [cpf, setCpf] = useState("");
+  const [codigoIfood, setCodigoIfood] = useState("");
+  const [naoTemIfood, setNaoTemIfood] = useState(false);
   const [preview, setPreview] = useState<string | null>(null);
   const [fotoFile, setFotoFile] = useState<File | null>(null);
   const [salvando, setSalvando] = useState(false);
@@ -63,21 +79,21 @@ export default function CompletarPerfil() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!apartamento.trim()) {
-      toast.error("Apartamento é obrigatório");
-      return;
-    }
-    if (!bloco.trim()) {
-      toast.error("Bloco é obrigatório");
-      return;
-    }
+    if (!apartamento.trim()) { toast.error("Apartamento é obrigatório"); return; }
+    if (!bloco.trim()) { toast.error("Bloco é obrigatório"); return; }
+    if (!telefone.trim()) { toast.error("Telefone é obrigatório"); return; }
+    if (!cpf.trim()) { toast.error("CPF é obrigatório"); return; }
+    if (!validarCPF(cpf)) { toast.error("CPF inválido"); return; }
+    if (!naoTemIfood && !codigoIfood.trim()) { toast.error("Informe o código iFood ou marque que não usa"); return; }
 
     const fd = new FormData();
     fd.append("name", session?.user?.name ?? "");
     fd.append("apartamento", apartamento.trim());
     fd.append("bloco", bloco.trim());
     fd.append("telefone", telefone);
-    fd.append("cpf", cpf);
+    fd.append("cpf", cpf.trim());
+    fd.append("naoTemIfood", String(naoTemIfood));
+    if (!naoTemIfood && codigoIfood.trim()) fd.append("codigoIfood", codigoIfood.trim());
     if (fotoFile) fd.append("foto", fotoFile);
 
     setSalvando(true);
@@ -185,7 +201,9 @@ export default function CompletarPerfil() {
 
             {/* Telefone */}
             <div className="space-y-1.5">
-              <Label className="text-xs font-medium text-slate-600">Telefone com DDD</Label>
+              <Label className="text-xs font-medium text-slate-600">
+                Telefone com DDD <span className="text-rose-500">*</span>
+              </Label>
               <div className="relative">
                 <Phone className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
                 <Input
@@ -193,13 +211,14 @@ export default function CompletarPerfil() {
                   onChange={(e) => setTelefone(maskTel(e.target.value))}
                   placeholder="(11) 99999-9999"
                   className="pl-10"
+                  required
                 />
               </div>
             </div>
 
             {/* CPF */}
             <div className="space-y-1.5">
-              <Label className="text-xs font-medium text-slate-600">CPF</Label>
+              <Label className="text-xs font-medium text-slate-600">CPF <span className="text-rose-500">*</span></Label>
               <div className="relative">
                 <CreditCard className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
                 <Input
@@ -210,6 +229,47 @@ export default function CompletarPerfil() {
                   maxLength={14}
                 />
               </div>
+            </div>
+
+            {/* Código iFood */}
+            <div className="space-y-1.5">
+              <Label className="text-xs font-medium text-slate-600 flex items-center gap-1.5">
+                <Bike className="w-3.5 h-3.5 text-rose-500" />
+                Código iFood <span className="text-rose-500">*</span>
+              </Label>
+              <p className="text-xs text-slate-400">
+                Últimos 4 dígitos do celular no iFood — usado pelo porteiro para confirmar retirada.
+              </p>
+              {!naoTemIfood && (
+                <div className="relative">
+                  <Bike className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
+                  <Input
+                    value={codigoIfood}
+                    onChange={(e) => setCodigoIfood(e.target.value.replace(/\D/g, "").slice(0, 4))}
+                    placeholder="0000"
+                    maxLength={4}
+                    className="pl-10 font-mono tracking-widest text-base"
+                  />
+                </div>
+              )}
+              <label className="flex items-center gap-2 cursor-pointer select-none group w-fit">
+                <div
+                  onClick={() => { setNaoTemIfood(!naoTemIfood); setCodigoIfood(""); }}
+                  className={cn(
+                    "w-4 h-4 rounded border-2 flex items-center justify-center transition-colors flex-shrink-0",
+                    naoTemIfood ? "bg-slate-600 border-slate-600" : "border-slate-300 group-hover:border-slate-400"
+                  )}
+                >
+                  {naoTemIfood && (
+                    <svg className="w-2.5 h-2.5 text-white" fill="none" viewBox="0 0 12 12" stroke="currentColor" strokeWidth={2.5}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M2 6l3 3 5-5" />
+                    </svg>
+                  )}
+                </div>
+                <span className="text-xs text-slate-500 group-hover:text-slate-700 transition-colors">
+                  Não uso iFood / não tenho código
+                </span>
+              </label>
             </div>
 
             <Button

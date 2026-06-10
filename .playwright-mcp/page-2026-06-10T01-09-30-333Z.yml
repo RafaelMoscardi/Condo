@@ -1,0 +1,99 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - img [ref=e6]
+        - generic [ref=e8]:
+          - img [ref=e11]
+          - heading "Gestão de Condomínio" [level=1] [ref=e16]:
+            - text: Gestão de
+            - text: Condomínio
+          - paragraph [ref=e17]: Avisos, reservas, ocorrências, visitantes e entregas — tudo num só lugar.
+        - generic [ref=e18]:
+          - generic [ref=e21]:
+            - paragraph [ref=e22]: Moradores
+            - paragraph [ref=e23]: Acompanhe tudo do seu apartamento
+          - generic [ref=e26]:
+            - paragraph [ref=e27]: Síndico
+            - paragraph [ref=e28]: Gerencie o condomínio com facilidade
+          - generic [ref=e31]:
+            - paragraph [ref=e32]: Portaria
+            - paragraph [ref=e33]: Controle de acesso e entregas
+      - generic [ref=e35]:
+        - generic [ref=e36]:
+          - button "Entrar" [ref=e37] [cursor=pointer]
+          - button "Criar conta" [active] [ref=e38] [cursor=pointer]
+        - generic [ref=e39]:
+          - heading "Criar conta" [level=2] [ref=e83]
+          - paragraph [ref=e41]: Preencha seus dados para solicitar acesso
+        - generic [ref=e84]:
+          - button "Foto" [ref=e87] [cursor=pointer]:
+            - img [ref=e88]
+            - generic [ref=e91]: Foto
+          - generic [ref=e92]:
+            - generic [ref=e93]: Nome completo *
+            - generic [ref=e94]:
+              - img [ref=e95]
+              - textbox "Nome completo *" [ref=e98]:
+                - /placeholder: Seu nome completo
+          - generic [ref=e99]:
+            - generic [ref=e100]: E-mail *
+            - generic [ref=e101]:
+              - img [ref=e102]
+              - textbox "E-mail *" [ref=e105]:
+                - /placeholder: seu@email.com
+                - text: porteiro@condo.com
+          - generic [ref=e106]:
+            - generic [ref=e107]:
+              - generic [ref=e108]: Senha *
+              - generic [ref=e109]:
+                - img [ref=e110]
+                - textbox "Senha *" [ref=e113]:
+                  - /placeholder: ••••••••
+                  - text: senha123
+            - generic [ref=e114]:
+              - generic [ref=e115]: Confirmar *
+              - generic [ref=e116]:
+                - img [ref=e117]
+                - textbox "Confirmar *" [ref=e120]:
+                  - /placeholder: ••••••••
+          - generic [ref=e121]:
+            - generic [ref=e122]:
+              - generic [ref=e123]: Bloco
+              - generic [ref=e124]:
+                - img [ref=e125]
+                - textbox "Bloco" [ref=e128]:
+                  - /placeholder: "Ex: A"
+            - generic [ref=e129]:
+              - generic [ref=e130]: Apartamento
+              - generic [ref=e131]:
+                - img [ref=e132]
+                - textbox "Apartamento" [ref=e135]:
+                  - /placeholder: "Ex: 101"
+          - generic [ref=e136]:
+            - generic [ref=e137]: CPF
+            - generic [ref=e138]:
+              - img [ref=e139]
+              - textbox "CPF" [ref=e141]:
+                - /placeholder: 000.000.000-00
+          - generic [ref=e142]:
+            - generic [ref=e143]: Telefone com DDD
+            - generic [ref=e144]:
+              - img [ref=e145]
+              - textbox "Telefone com DDD" [ref=e147]:
+                - /placeholder: (11) 99999-9999
+          - generic [ref=e148]:
+            - generic [ref=e149]:
+              - img [ref=e150]
+              - text: Código iFood *
+            - paragraph [ref=e155]: "Últimos 4 dígitos do celular cadastrado no iFood (ex: 9981)"
+            - generic [ref=e156]:
+              - img [ref=e157]
+              - textbox "Código iFood *" [ref=e162]:
+                - /placeholder: "0000"
+            - generic [ref=e165] [cursor=pointer]: Não uso iFood / não tenho código
+          - button "Criar conta" [ref=e166] [cursor=pointer]:
+            - text: Criar conta
+            - img
+    - region "Notifications alt+T"
+  - alert [ref=e82]

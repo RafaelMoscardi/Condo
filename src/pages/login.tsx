@@ -8,7 +8,7 @@ import { authOptions } from "@/lib/auth";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Building2, ArrowRight, KeyRound, Mail, User, Phone, CreditCard, Home, Camera, X } from "lucide-react";
+import { Building2, ArrowRight, KeyRound, Mail, User, Phone, CreditCard, Home, Camera, X, Bike } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
@@ -183,6 +183,8 @@ function CadastroForm({ onSucesso }: { onSucesso: () => void }) {
   const [apartamento, setApartamento] = useState("");
   const [cpf, setCpf] = useState("");
   const [telefone, setTelefone] = useState("");
+  const [codigoIfood, setCodigoIfood] = useState("");
+  const [naoTemIfood, setNaoTemIfood] = useState(false);
   const [foto, setFoto] = useState<File | null>(null);
   const [fotoPreview, setFotoPreview] = useState<string | null>(null);
   const [erro, setErro] = useState("");
@@ -213,8 +215,16 @@ function CadastroForm({ onSucesso }: { onSucesso: () => void }) {
       setErro("Senha deve ter no mínimo 6 caracteres");
       return;
     }
-    if (cpf && !validarCPF(cpf)) {
+    if (!cpf.trim()) {
+      setErro("CPF é obrigatório");
+      return;
+    }
+    if (!validarCPF(cpf)) {
       setErro("CPF inválido");
+      return;
+    }
+    if (!naoTemIfood && !codigoIfood.trim()) {
+      setErro("Informe seu código iFood ou marque \"Não uso iFood\"");
       return;
     }
 
@@ -225,8 +235,10 @@ function CadastroForm({ onSucesso }: { onSucesso: () => void }) {
     fd.append("password", senha);
     if (bloco) fd.append("bloco", bloco);
     if (apartamento) fd.append("apartamento", apartamento);
-    if (cpf) fd.append("cpf", cpf);
+    fd.append("cpf", cpf);
     if (telefone) fd.append("telefone", telefone);
+    if (!naoTemIfood && codigoIfood.trim()) fd.append("codigoIfood", codigoIfood.trim());
+    fd.append("naoTemIfood", String(naoTemIfood));
     if (foto) fd.append("foto", foto);
 
     const res = await fetch("/api/auth/register", { method: "POST", body: fd });
@@ -373,7 +385,7 @@ function CadastroForm({ onSucesso }: { onSucesso: () => void }) {
 
       {/* CPF */}
       <div className="space-y-1.5">
-        <Label htmlFor="cad-cpf" className="text-sm font-medium text-slate-700">CPF</Label>
+        <Label htmlFor="cad-cpf" className="text-sm font-medium text-slate-700">CPF <span className="text-rose-500">*</span></Label>
         <div className="relative">
           <CreditCard className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
           <Input
@@ -401,6 +413,50 @@ function CadastroForm({ onSucesso }: { onSucesso: () => void }) {
             maxLength={15}
           />
         </div>
+      </div>
+
+      {/* Código iFood */}
+      <div className="space-y-1.5">
+        <Label htmlFor="cad-ifood" className="text-sm font-medium text-slate-700 flex items-center gap-1.5">
+          <Bike className="w-3.5 h-3.5 text-rose-500" />
+          Código iFood *
+        </Label>
+        <p className="text-xs text-slate-400 -mt-0.5">
+          Últimos 4 dígitos do celular cadastrado no iFood (ex: <span className="font-mono font-semibold">9981</span>)
+        </p>
+        {!naoTemIfood ? (
+          <div className="relative">
+            <Bike className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
+            <Input
+              id="cad-ifood"
+              value={codigoIfood}
+              onChange={(e) => setCodigoIfood(e.target.value.replace(/\D/g, "").slice(0, 4))}
+              placeholder="0000"
+              maxLength={4}
+              className="pl-10 h-11 border-slate-200 bg-white font-mono tracking-widest text-base"
+            />
+          </div>
+        ) : null}
+        <label className="flex items-center gap-2 cursor-pointer select-none group w-fit">
+          <div
+            onClick={() => { setNaoTemIfood(!naoTemIfood); setCodigoIfood(""); }}
+            className={cn(
+              "w-4 h-4 rounded border-2 flex items-center justify-center transition-colors flex-shrink-0",
+              naoTemIfood
+                ? "bg-slate-600 border-slate-600"
+                : "border-slate-300 group-hover:border-slate-400"
+            )}
+          >
+            {naoTemIfood && (
+              <svg className="w-2.5 h-2.5 text-white" fill="none" viewBox="0 0 12 12" stroke="currentColor" strokeWidth={2.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M2 6l3 3 5-5" />
+              </svg>
+            )}
+          </div>
+          <span className="text-xs text-slate-500 group-hover:text-slate-700 transition-colors">
+            Não uso iFood / não tenho código
+          </span>
+        </label>
       </div>
 
       {erro && (
@@ -438,10 +494,16 @@ export default function Login() {
     : undefined;
 
   return (
-    <div className="min-h-screen flex bg-slate-50">
+    <div className="min-h-screen flex bg-gradient-to-br from-slate-50 via-slate-50 to-indigo-50/40">
       {/* Painel esquerdo — branding */}
-      <div className="hidden lg:flex w-[420px] flex-shrink-0 bg-[#0F172A] flex-col justify-between p-10 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-5">
+      <div className="hidden lg:flex w-[420px] flex-shrink-0 bg-[#0D1225] flex-col justify-between p-10 relative overflow-hidden">
+        {/* Gradient orbs */}
+        <div className="absolute top-[-60px] left-[-40px] w-72 h-72 bg-indigo-600/25 rounded-full blur-[80px] pointer-events-none" />
+        <div className="absolute bottom-[-40px] right-[-60px] w-64 h-64 bg-violet-600/20 rounded-full blur-[70px] pointer-events-none" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 bg-indigo-900/30 rounded-full blur-[60px] pointer-events-none" />
+
+        {/* Grid overlay */}
+        <div className="absolute inset-0 opacity-[0.04]">
           <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
@@ -451,28 +513,33 @@ export default function Login() {
             <rect width="100%" height="100%" fill="url(#grid)" />
           </svg>
         </div>
+
         <div className="relative z-10">
-          <div className="w-12 h-12 bg-indigo-600 rounded-2xl flex items-center justify-center shadow-xl shadow-indigo-900/40 mb-8">
-            <Building2 className="w-6 h-6 text-white" />
+          <div className="relative w-14 h-14 mb-8">
+            <div className="w-14 h-14 bg-gradient-to-br from-indigo-500 to-violet-600 rounded-2xl flex items-center justify-center shadow-2xl shadow-indigo-900/60">
+              <Building2 className="w-7 h-7 text-white" />
+            </div>
+            <div className="absolute -inset-1 rounded-2xl bg-gradient-to-br from-indigo-500/30 to-violet-600/30 blur-md -z-10" />
           </div>
-          <h1 className="text-white font-bold text-3xl leading-tight mb-3">
-            Gestão de Condomínio
+          <h1 className="text-white font-bold text-3xl leading-tight mb-3 tracking-tight">
+            Gestão de<br />Condomínio
           </h1>
-          <p className="text-slate-400 text-base leading-relaxed">
+          <p className="text-slate-400 text-sm leading-relaxed">
             Avisos, reservas, ocorrências, visitantes e entregas — tudo num só lugar.
           </p>
         </div>
-        <div className="relative z-10 space-y-3">
+
+        <div className="relative z-10 space-y-2">
           {[
-            { label: "Moradores", desc: "Acompanhe tudo do seu apartamento" },
-            { label: "Síndico", desc: "Gerencie o condomínio com facilidade" },
-            { label: "Portaria", desc: "Controle de acesso e entregas" },
+            { label: "Moradores", desc: "Acompanhe tudo do seu apartamento", color: "bg-indigo-500" },
+            { label: "Síndico",   desc: "Gerencie o condomínio com facilidade", color: "bg-violet-500" },
+            { label: "Portaria",  desc: "Controle de acesso e entregas", color: "bg-emerald-500" },
           ].map((item) => (
-            <div key={item.label} className="flex items-center gap-3 p-3 rounded-xl bg-white/5 border border-white/10">
-              <div className="w-1.5 h-1.5 rounded-full bg-indigo-400 flex-shrink-0" />
+            <div key={item.label} className="flex items-center gap-3 p-3.5 rounded-xl bg-white/[0.04] border border-white/[0.08] hover:bg-white/[0.07] transition-colors">
+              <div className={`w-2 h-2 rounded-full ${item.color} flex-shrink-0`} />
               <div>
                 <p className="text-white text-xs font-semibold">{item.label}</p>
-                <p className="text-slate-400 text-xs">{item.desc}</p>
+                <p className="text-slate-500 text-xs mt-0.5">{item.desc}</p>
               </div>
             </div>
           ))}
@@ -484,10 +551,12 @@ export default function Login() {
         <div className="w-full max-w-md py-4">
           {/* Mobile logo */}
           <div className="lg:hidden flex items-center gap-3 mb-8">
-            <div className="w-10 h-10 bg-indigo-600 rounded-xl flex items-center justify-center">
-              <Building2 className="w-5 h-5 text-white" />
+            <div className="relative">
+              <div className="w-10 h-10 bg-gradient-to-br from-indigo-500 to-violet-600 rounded-xl flex items-center justify-center shadow-lg shadow-indigo-600/25">
+                <Building2 className="w-5 h-5 text-white" />
+              </div>
             </div>
-            <span className="font-bold text-slate-800 text-lg">Condomínio</span>
+            <span className="font-bold text-slate-800 text-lg tracking-tight">Condomínio</span>
           </div>
 
           {/* Tab toggle */}

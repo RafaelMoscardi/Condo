@@ -1,0 +1,440 @@
+[     121ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///./node_modules/react-dom/cjs/react-dom.development.js:29889
+[     143ms] [LOG] [HMR] connected @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:38
+[   19608ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  120722ms] [ERROR] Warning: Function components cannot be given refs. Attempts to access this ref will fail. Did you mean to use React.forwardRef()?%s%s 
+
+Check the render method of `DialogClose`. 
+    at Button (webpack-internal:///./src/components/ui/button.tsx:42:11)
+    at DialogClose (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/close/DialogClose.js:28:5)
+    at div
+    at FloatingFocusManager (webpack-internal:///./node_modules/@base-ui/react/esm/floating-ui-react/components/FloatingFocusManager.js:143:5)
+    at DialogPopup (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/popup/DialogPopup.js:51:5)
+    at FloatingPortal (webpack-internal:///./node_modules/@base-ui/react/esm/floating-ui-react/components/FloatingPortal.js:126:5)
+    at DialogPortal (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/portal/DialogPortal.js:31:5)
+    at DialogPortal (webpack-internal:///./src/components/ui/dialog.tsx:53:14)
+    at DialogContent (webpack-internal:///./src/components/ui/dialog.tsx:90:11)
+    at DialogRoot (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/root/DialogRoot.js:21:51)
+    at Dialog (webpack-internal:///./src/components/ui/dialog.tsx:29:14)
+    at ConfirmDialog (webpack-internal:///./src/components/ui/confirm-dialog.tsx:13:11)
+    at div
+    at AppShell (webpack-internal:///./src/components/layout/AppShell.tsx:32:11)
+    at ComunidadePage (webpack-internal:///./src/pages/comunidade/index.tsx:1713:11)
+    at SessionProvider (webpack-internal:///./node_modules/next-auth/react/index.js:365:24)
+    at App (webpack-internal:///./src/pages/_app.tsx:17:11)
+    at PathnameContextProviderAdapter (webpack-internal:///./node_modules/next/dist/shared/lib/router/adapters.js:81:11)
+    at ErrorBoundary (webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/ErrorBoundary.js:41:9)
+    at ReactDevOverlay (webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/ReactDevOverlay.js:33:11)
+    at Container (webpack-internal:///./node_modules/next/dist/client/index.js:81:1)
+    at AppContainer (webpack-internal:///./node_modules/next/dist/client/index.js:189:11)
+    at Root (webpack-internal:///./node_modules/next/dist/client/index.js:413:11) @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[  121891ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///./node_modules/react-dom/cjs/react-dom.development.js:29889
+[  121919ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/login:0
+[  121921ms] [LOG] [HMR] connected @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:38
+[  136016ms] [ERROR] Warning: Function components cannot be given refs. Attempts to access this ref will fail. Did you mean to use React.forwardRef()?%s%s 
+
+Check the render method of `DialogClose`. 
+    at Button (webpack-internal:///./src/components/ui/button.tsx:42:11)
+    at DialogClose (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/close/DialogClose.js:28:5)
+    at div
+    at FloatingFocusManager (webpack-internal:///./node_modules/@base-ui/react/esm/floating-ui-react/components/FloatingFocusManager.js:143:5)
+    at DialogPopup (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/popup/DialogPopup.js:51:5)
+    at FloatingPortal (webpack-internal:///./node_modules/@base-ui/react/esm/floating-ui-react/components/FloatingPortal.js:126:5)
+    at DialogPortal (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/portal/DialogPortal.js:31:5)
+    at DialogPortal (webpack-internal:///./src/components/ui/dialog.tsx:53:14)
+    at DialogContent (webpack-internal:///./src/components/ui/dialog.tsx:90:11)
+    at DialogRoot (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/root/DialogRoot.js:21:51)
+    at Dialog (webpack-internal:///./src/components/ui/dialog.tsx:29:14)
+    at div
+    at VagasTab (webpack-internal:///./src/pages/comunidade/index.tsx:289:11)
+    at div
+    at main
+    at div
+    at div
+    at AppShell (webpack-internal:///./src/components/layout/AppShell.tsx:32:11)
+    at ComunidadePage (webpack-internal:///./src/pages/comunidade/index.tsx:1713:11)
+    at SessionProvider (webpack-internal:///./node_modules/next-auth/react/index.js:365:24)
+    at App (webpack-internal:///./src/pages/_app.tsx:17:11)
+    at PathnameContextProviderAdapter (webpack-internal:///./node_modules/next/dist/shared/lib/router/adapters.js:81:11)
+    at ErrorBoundary (webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/ErrorBoundary.js:41:9)
+    at ReactDevOverlay (webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/ReactDevOverlay.js:33:11)
+    at Container (webpack-internal:///./node_modules/next/dist/client/index.js:81:1)
+    at AppContainer (webpack-internal:///./node_modules/next/dist/client/index.js:189:11)
+    at Root (webpack-internal:///./node_modules/next/dist/client/index.js:413:11) @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[  153701ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///./node_modules/react-dom/cjs/react-dom.development.js:29889
+[  153752ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/login:0
+[  153753ms] [LOG] [HMR] connected @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:38
+[  164256ms] [ERROR] Warning: Function components cannot be given refs. Attempts to access this ref will fail. Did you mean to use React.forwardRef()?%s%s 
+
+Check the render method of `DialogClose`. 
+    at Button (webpack-internal:///./src/components/ui/button.tsx:42:11)
+    at DialogClose (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/close/DialogClose.js:28:5)
+    at div
+    at FloatingFocusManager (webpack-internal:///./node_modules/@base-ui/react/esm/floating-ui-react/components/FloatingFocusManager.js:143:5)
+    at DialogPopup (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/popup/DialogPopup.js:51:5)
+    at FloatingPortal (webpack-internal:///./node_modules/@base-ui/react/esm/floating-ui-react/components/FloatingPortal.js:126:5)
+    at DialogPortal (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/portal/DialogPortal.js:31:5)
+    at DialogPortal (webpack-internal:///./src/components/ui/dialog.tsx:53:14)
+    at DialogContent (webpack-internal:///./src/components/ui/dialog.tsx:90:11)
+    at DialogRoot (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/root/DialogRoot.js:21:51)
+    at Dialog (webpack-internal:///./src/components/ui/dialog.tsx:29:14)
+    at ConfirmDialog (webpack-internal:///./src/components/ui/confirm-dialog.tsx:13:11)
+    at div
+    at AppShell (webpack-internal:///./src/components/layout/AppShell.tsx:32:11)
+    at VagaDetailPage (webpack-internal:///./src/pages/comunidade/vagas/[id].tsx:488:11)
+    at SessionProvider (webpack-internal:///./node_modules/next-auth/react/index.js:365:24)
+    at App (webpack-internal:///./src/pages/_app.tsx:17:11)
+    at PathnameContextProviderAdapter (webpack-internal:///./node_modules/next/dist/shared/lib/router/adapters.js:81:11)
+    at ErrorBoundary (webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/ErrorBoundary.js:41:9)
+    at ReactDevOverlay (webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/ReactDevOverlay.js:33:11)
+    at Container (webpack-internal:///./node_modules/next/dist/client/index.js:81:1)
+    at AppContainer (webpack-internal:///./node_modules/next/dist/client/index.js:189:11)
+    at Root (webpack-internal:///./node_modules/next/dist/client/index.js:413:11) @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[  165161ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///./node_modules/react-dom/cjs/react-dom.development.js:29889
+[  165185ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/login:0
+[  165186ms] [LOG] [HMR] connected @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:38
+[  196187ms] [ERROR] Warning: Function components cannot be given refs. Attempts to access this ref will fail. Did you mean to use React.forwardRef()?%s%s 
+
+Check the render method of `DialogClose`. 
+    at Button (webpack-internal:///./src/components/ui/button.tsx:42:11)
+    at DialogClose (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/close/DialogClose.js:28:5)
+    at div
+    at FloatingFocusManager (webpack-internal:///./node_modules/@base-ui/react/esm/floating-ui-react/components/FloatingFocusManager.js:143:5)
+    at DialogPopup (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/popup/DialogPopup.js:51:5)
+    at FloatingPortal (webpack-internal:///./node_modules/@base-ui/react/esm/floating-ui-react/components/FloatingPortal.js:126:5)
+    at DialogPortal (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/portal/DialogPortal.js:31:5)
+    at DialogPortal (webpack-internal:///./src/components/ui/dialog.tsx:53:14)
+    at DialogContent (webpack-internal:///./src/components/ui/dialog.tsx:90:11)
+    at DialogRoot (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/root/DialogRoot.js:21:51)
+    at Dialog (webpack-internal:///./src/components/ui/dialog.tsx:29:14)
+    at ConfirmDialog (webpack-internal:///./src/components/ui/confirm-dialog.tsx:13:11)
+    at main
+    at div
+    at div
+    at AppShell (webpack-internal:///./src/components/layout/AppShell.tsx:32:11)
+    at VagaDetailPage (webpack-internal:///./src/pages/comunidade/vagas/[id].tsx:488:11)
+    at SessionProvider (webpack-internal:///./node_modules/next-auth/react/index.js:365:24)
+    at App (webpack-internal:///./src/pages/_app.tsx:17:11)
+    at PathnameContextProviderAdapter (webpack-internal:///./node_modules/next/dist/shared/lib/router/adapters.js:81:11)
+    at ErrorBoundary (webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/ErrorBoundary.js:41:9)
+    at ReactDevOverlay (webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/ReactDevOverlay.js:33:11)
+    at Container (webpack-internal:///./node_modules/next/dist/client/index.js:81:1)
+    at AppContainer (webpack-internal:///./node_modules/next/dist/client/index.js:189:11)
+    at Root (webpack-internal:///./node_modules/next/dist/client/index.js:413:11) @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[  201158ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///./node_modules/react-dom/cjs/react-dom.development.js:29889
+[  201213ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/login:0
+[  201214ms] [LOG] [HMR] connected @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:38
+[  657400ms] [ERROR] Warning: Function components cannot be given refs. Attempts to access this ref will fail. Did you mean to use React.forwardRef()?%s%s 
+
+Check the render method of `DialogClose`. 
+    at Button (webpack-internal:///./src/components/ui/button.tsx:42:11)
+    at DialogClose (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/close/DialogClose.js:28:5)
+    at div
+    at FloatingFocusManager (webpack-internal:///./node_modules/@base-ui/react/esm/floating-ui-react/components/FloatingFocusManager.js:143:5)
+    at DialogPopup (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/popup/DialogPopup.js:51:5)
+    at FloatingPortal (webpack-internal:///./node_modules/@base-ui/react/esm/floating-ui-react/components/FloatingPortal.js:126:5)
+    at DialogPortal (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/portal/DialogPortal.js:31:5)
+    at DialogPortal (webpack-internal:///./src/components/ui/dialog.tsx:53:14)
+    at DialogContent (webpack-internal:///./src/components/ui/dialog.tsx:90:11)
+    at DialogRoot (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/root/DialogRoot.js:21:51)
+    at Dialog (webpack-internal:///./src/components/ui/dialog.tsx:29:14)
+    at ConfirmDialog (webpack-internal:///./src/components/ui/confirm-dialog.tsx:13:11)
+    at div
+    at AppShell (webpack-internal:///./src/components/layout/AppShell.tsx:32:11)
+    at Dashboard (webpack-internal:///./src/pages/dashboard/index.tsx:389:11)
+    at SessionProvider (webpack-internal:///./node_modules/next-auth/react/index.js:365:24)
+    at App (webpack-internal:///./src/pages/_app.tsx:17:11)
+    at PathnameContextProviderAdapter (webpack-internal:///./node_modules/next/dist/shared/lib/router/adapters.js:81:11)
+    at ErrorBoundary (webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/ErrorBoundary.js:41:9)
+    at ReactDevOverlay (webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/ReactDevOverlay.js:33:11)
+    at Container (webpack-internal:///./node_modules/next/dist/client/index.js:81:1)
+    at AppContainer (webpack-internal:///./node_modules/next/dist/client/index.js:189:11)
+    at Root (webpack-internal:///./node_modules/next/dist/client/index.js:413:11) @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[  658652ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///./node_modules/react-dom/cjs/react-dom.development.js:29889
+[  658706ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/login:0
+[  658707ms] [LOG] [HMR] connected @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:38
+[  665197ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  665478ms] [LOG] [Fast Refresh] done in 282ms @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:190
+[  665642ms] [ERROR] Error: Loading initial props cancelled
+    at eval (webpack-internal:///./node_modules/next/dist/shared/lib/router/router.js:1338:29)
+    at async Router.getRouteInfo (webpack-internal:///./node_modules/next/dist/shared/lib/router/router.js:1086:41)
+    at async Router.change (webpack-internal:///./node_modules/next/dist/shared/lib/router/router.js:672:29) @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[  665642ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  667689ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  668742ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  670273ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  672259ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  674678ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  677298ms] [ERROR] Warning: Function components cannot be given refs. Attempts to access this ref will fail. Did you mean to use React.forwardRef()?%s%s 
+
+Check the render method of `DialogClose`. 
+    at Button (webpack-internal:///./src/components/ui/button.tsx:42:11)
+    at DialogClose (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/close/DialogClose.js:28:5)
+    at div
+    at FloatingFocusManager (webpack-internal:///./node_modules/@base-ui/react/esm/floating-ui-react/components/FloatingFocusManager.js:143:5)
+    at DialogPopup (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/popup/DialogPopup.js:51:5)
+    at FloatingPortal (webpack-internal:///./node_modules/@base-ui/react/esm/floating-ui-react/components/FloatingPortal.js:126:5)
+    at DialogPortal (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/portal/DialogPortal.js:31:5)
+    at DialogPortal (webpack-internal:///./src/components/ui/dialog.tsx:53:14)
+    at DialogContent (webpack-internal:///./src/components/ui/dialog.tsx:90:11)
+    at DialogRoot (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/root/DialogRoot.js:21:51)
+    at Dialog (webpack-internal:///./src/components/ui/dialog.tsx:29:14)
+    at ConfirmDialog (webpack-internal:///./src/components/ui/confirm-dialog.tsx:13:11)
+    at div
+    at AppShell (webpack-internal:///./src/components/layout/AppShell.tsx:32:11)
+    at ComunidadePage (webpack-internal:///./src/pages/comunidade/index.tsx:1713:11)
+    at SessionProvider (webpack-internal:///./node_modules/next-auth/react/index.js:365:24)
+    at App (webpack-internal:///./src/pages/_app.tsx:17:11)
+    at PathnameContextProviderAdapter (webpack-internal:///./node_modules/next/dist/shared/lib/router/adapters.js:81:11)
+    at ErrorBoundary (webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/ErrorBoundary.js:41:9)
+    at ReactDevOverlay (webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/ReactDevOverlay.js:33:11)
+    at Container (webpack-internal:///./node_modules/next/dist/client/index.js:81:1)
+    at AppContainer (webpack-internal:///./node_modules/next/dist/client/index.js:189:11)
+    at Root (webpack-internal:///./node_modules/next/dist/client/index.js:413:11) @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[  678450ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///./node_modules/react-dom/cjs/react-dom.development.js:29889
+[  678470ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/login:0
+[  678471ms] [LOG] [HMR] connected @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:38
+[  681211ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://accounts.google.com/v3/signin/identifier?opparams=%253F&dsh=S-399696506%3A1781055896568316&client_id=439592955955-ivoi93ujai573amonpi7q7uefja71p1g.apps.googleusercontent.com&code_challenge=WVeoaWkUHxiD0aR793JaN9_bR1JebXrML6kyXuSxdCk&code_challenge_method=S256&o2v=2&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fapi%2Fauth%2Fcallback%2Fgoogle&response_type=code&scope=openid+email+profile&service=lso&state=Y1jTovTGYGRFzly4QUTWW9b81PalDrlrPRh69nz1iuo&flowName=GeneralOAuthFlow&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hANfPicAA1nT4_pA_fF5X2k0ZpIFWe1bXWJrC7fY_3P_shXUMGpd9P0MqWoUighQ4x_de5OF4zNlLiae4SccRiwJ5wIR-MKKp5k1guFH7ngg8vz9nwLAlvi7UzR2VeXTcySbz8if9kpIpNxieE3tHDmv24gZwFPZ4iP0Rdd7ulD7eAZltNQgvm4VpyEfuFvx9siG5lNeYYuBwKn5QlgLrsCb27Md-1pD8UQnyj86bOAKSss3-2FvqV5iF_qWFMur9dLIjhBjggcRSEyK_pbMZBOTeaezceGe0C3nhSTdac32rFWerEkJ5kDX8CVNwFhuvNosbgacfiRKj0sCBbznZ6j3CtbTzXdU84CcqAmzTCA7GAjauuhSjj-JriQnx7qJRtBKiJE5jJYuG-GQh6j-G6BksVSso75cjSeh5AsO82dUhc3XYTmWJju58LhbzjZcH1W8W1hg9viO5dgXNE7GhA14RONSOw%26flowName%3DGeneralOAuthFlow%26as%3DS-399696506%253A1781055896568316%26client_id%3D439592955955-ivoi93ujai573amonpi7q7uefja71p1g.apps.googleusercontent.com%26requestPath%3D%252Fsignin%252Foauth%252Fconsent%23&app_domain=http%3A%2F%2Flocalhost%3A3000&rart=ANgoxcc3SrSVvtfiASe5utU0anrjo8aNtSd20zSobc8Fnew4vVOasMWu1w7etIO7wzBj_BD0Fb9IS2CKZFrIbr0QGq0hQXsgSy91Wkzq86Qms3RRf8uxTfI:0
+[  681217ms] [LOG] %c%s color: red; background: yellow; font-size: 24px; AVISO @ https://www.gstatic.com/_/mss/boq-identity/_/js/k=boq-identity.AccountsSignInUi.pt_BR.qfs3D55PnpA.es5.O/am=EQ0AAAAMin-EDAD-__4bAIAAgmwHfM8CaAKEDAAAAAAAAAAAWAAAgEY/d=1/excm=_b,_tp,identifierview/ed=1/dg=0/wt=2/ujg=1/rs=AOaEmlE4FgRfNePD2MDP_JmLcIDdKBAKmg/dti=1/m=_b,_tp:549
+[  681217ms] [LOG] %c%s font-size: 18px; O uso deste console pode permitir que invasores falsifiquem sua identidade para roubar informações por meio de um ataque chamado Self-XSS.
+Não insira nem cole códigos que você não conheça. @ https://www.gstatic.com/_/mss/boq-identity/_/js/k=boq-identity.AccountsSignInUi.pt_BR.qfs3D55PnpA.es5.O/am=EQ0AAAAMin-EDAD-__4bAIAAgmwHfM8CaAKEDAAAAAAAAAAAWAAAgEY/d=1/excm=_b,_tp,identifierview/ed=1/dg=0/wt=2/ujg=1/rs=AOaEmlE4FgRfNePD2MDP_JmLcIDdKBAKmg/dti=1/m=_b,_tp:549
+[  687727ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://accounts.google.com/v3/signin/challenge/pwd?TL=ADCchmZMZCbtKTBUbCst2HYxeYy9l6l5zaunUAlVeaJeuDU4wXrmP_1mbQCf0H55&app_domain=http%3A%2F%2Flocalhost%3A3000&checkConnection=youtube%3A265&checkedDomains=youtube&cid=2&client_id=439592955955-ivoi93ujai573amonpi7q7uefja71p1g.apps.googleusercontent.com&code_challenge=WVeoaWkUHxiD0aR793JaN9_bR1JebXrML6kyXuSxdCk&code_challenge_method=S256&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hANfPicAA1nT4_pA_fF5X2k0ZpIFWe1bXWJrC7fY_3P_shXUMGpd9P0MqWoUighQ4x_de5OF4zNlLiae4SccRiwJ5wIR-MKKp5k1guFH7ngg8vz9nwLAlvi7UzR2VeXTcySbz8if9kpIpNxieE3tHDmv24gZwFPZ4iP0Rdd7ulD7eAZltNQgvm4VpyEfuFvx9siG5lNeYYuBwKn5QlgLrsCb27Md-1pD8UQnyj86bOAKSss3-2FvqV5iF_qWFMur9dLIjhBjggcRSEyK_pbMZBOTeaezceGe0C3nhSTdac32rFWerEkJ5kDX8CVNwFhuvNosbgacfiRKj0sCBbznZ6j3CtbTzXdU84CcqAmzTCA7GAjauuhSjj-JriQnx7qJRtBKiJE5jJYuG-GQh6j-G6BksVSso75cjSeh5AsO82dUhc3XYTmWJju58LhbzjZcH1W8W1hg9viO5dgXNE7GhA14RONSOw%26flowName%3DGeneralOAuthFlow%26as%3DS-399696506%253A1781055896568316%26client_id%3D439592955955-ivoi93ujai573amonpi7q7uefja71p1g.apps.googleusercontent.com%26requestPath%3D%252Fsignin%252Foauth%252Fconsent%23&dsh=S-399696506%3A1781055896568316&flowName=GeneralOAuthFlow&o2v=2&opparams=%253F&pstMsg=1&rart=ANgoxcc3SrSVvtfiASe5utU0anrjo8aNtSd20zSobc8Fnew4vVOasMWu1w7etIO7wzBj_BD0Fb9IS2CKZFrIbr0QGq0hQXsgSy91Wkzq86Qms3RRf8uxTfI&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fapi%2Fauth%2Fcallback%2Fgoogle&response_type=code&scope=openid%20email%20profile&service=lso&state=Y1jTovTGYGRFzly4QUTWW9b81PalDrlrPRh69nz1iuo:0
+[  681211ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://accounts.google.com/v3/signin/identifier?opparams=%253F&dsh=S-399696506%3A1781055896568316&client_id=439592955955-ivoi93ujai573amonpi7q7uefja71p1g.apps.googleusercontent.com&code_challenge=WVeoaWkUHxiD0aR793JaN9_bR1JebXrML6kyXuSxdCk&code_challenge_method=S256&o2v=2&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fapi%2Fauth%2Fcallback%2Fgoogle&response_type=code&scope=openid+email+profile&service=lso&state=Y1jTovTGYGRFzly4QUTWW9b81PalDrlrPRh69nz1iuo&flowName=GeneralOAuthFlow&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hANfPicAA1nT4_pA_fF5X2k0ZpIFWe1bXWJrC7fY_3P_shXUMGpd9P0MqWoUighQ4x_de5OF4zNlLiae4SccRiwJ5wIR-MKKp5k1guFH7ngg8vz9nwLAlvi7UzR2VeXTcySbz8if9kpIpNxieE3tHDmv24gZwFPZ4iP0Rdd7ulD7eAZltNQgvm4VpyEfuFvx9siG5lNeYYuBwKn5QlgLrsCb27Md-1pD8UQnyj86bOAKSss3-2FvqV5iF_qWFMur9dLIjhBjggcRSEyK_pbMZBOTeaezceGe0C3nhSTdac32rFWerEkJ5kDX8CVNwFhuvNosbgacfiRKj0sCBbznZ6j3CtbTzXdU84CcqAmzTCA7GAjauuhSjj-JriQnx7qJRtBKiJE5jJYuG-GQh6j-G6BksVSso75cjSeh5AsO82dUhc3XYTmWJju58LhbzjZcH1W8W1hg9viO5dgXNE7GhA14RONSOw%26flowName%3DGeneralOAuthFlow%26as%3DS-399696506%253A1781055896568316%26client_id%3D439592955955-ivoi93ujai573amonpi7q7uefja71p1g.apps.googleusercontent.com%26requestPath%3D%252Fsignin%252Foauth%252Fconsent%23&app_domain=http%3A%2F%2Flocalhost%3A3000&rart=ANgoxcc3SrSVvtfiASe5utU0anrjo8aNtSd20zSobc8Fnew4vVOasMWu1w7etIO7wzBj_BD0Fb9IS2CKZFrIbr0QGq0hQXsgSy91Wkzq86Qms3RRf8uxTfI:0
+[  687727ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://accounts.google.com/v3/signin/challenge/pwd?TL=ADCchmZMZCbtKTBUbCst2HYxeYy9l6l5zaunUAlVeaJeuDU4wXrmP_1mbQCf0H55&app_domain=http%3A%2F%2Flocalhost%3A3000&checkConnection=youtube%3A265&checkedDomains=youtube&cid=2&client_id=439592955955-ivoi93ujai573amonpi7q7uefja71p1g.apps.googleusercontent.com&code_challenge=WVeoaWkUHxiD0aR793JaN9_bR1JebXrML6kyXuSxdCk&code_challenge_method=S256&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hANfPicAA1nT4_pA_fF5X2k0ZpIFWe1bXWJrC7fY_3P_shXUMGpd9P0MqWoUighQ4x_de5OF4zNlLiae4SccRiwJ5wIR-MKKp5k1guFH7ngg8vz9nwLAlvi7UzR2VeXTcySbz8if9kpIpNxieE3tHDmv24gZwFPZ4iP0Rdd7ulD7eAZltNQgvm4VpyEfuFvx9siG5lNeYYuBwKn5QlgLrsCb27Md-1pD8UQnyj86bOAKSss3-2FvqV5iF_qWFMur9dLIjhBjggcRSEyK_pbMZBOTeaezceGe0C3nhSTdac32rFWerEkJ5kDX8CVNwFhuvNosbgacfiRKj0sCBbznZ6j3CtbTzXdU84CcqAmzTCA7GAjauuhSjj-JriQnx7qJRtBKiJE5jJYuG-GQh6j-G6BksVSso75cjSeh5AsO82dUhc3XYTmWJju58LhbzjZcH1W8W1hg9viO5dgXNE7GhA14RONSOw%26flowName%3DGeneralOAuthFlow%26as%3DS-399696506%253A1781055896568316%26client_id%3D439592955955-ivoi93ujai573amonpi7q7uefja71p1g.apps.googleusercontent.com%26requestPath%3D%252Fsignin%252Foauth%252Fconsent%23&dsh=S-399696506%3A1781055896568316&flowName=GeneralOAuthFlow&o2v=2&opparams=%253F&pstMsg=1&rart=ANgoxcc3SrSVvtfiASe5utU0anrjo8aNtSd20zSobc8Fnew4vVOasMWu1w7etIO7wzBj_BD0Fb9IS2CKZFrIbr0QGq0hQXsgSy91Wkzq86Qms3RRf8uxTfI&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fapi%2Fauth%2Fcallback%2Fgoogle&response_type=code&scope=openid%20email%20profile&service=lso&state=Y1jTovTGYGRFzly4QUTWW9b81PalDrlrPRh69nz1iuo:0
+[  702990ms] [LOG] %c%s color: red; background: yellow; font-size: 24px; AVISO @ https://www.gstatic.com/_/mss/boq-identity/_/js/k=boq-identity.OAuthUi.pt_BR.3s7ieDzz-C8.es5.O/am=MgAAAADwD2AA8P_7bwBBtgPvGUABAgAAAAAAAACAAQAgAg/d=1/excm=_b,_tp,attributesview/ed=1/dg=0/wt=2/ujg=1/rs=AOaEmlFgR22eniG9Jao4OxPVmQcCPnNkKg/dti=1/m=_b,_tp:535
+[  702990ms] [LOG] %c%s font-size: 18px; O uso deste console pode permitir que invasores falsifiquem sua identidade para roubar informações por meio de um ataque chamado Self-XSS.
+Não insira nem cole códigos que você não conheça. @ https://www.gstatic.com/_/mss/boq-identity/_/js/k=boq-identity.OAuthUi.pt_BR.3s7ieDzz-C8.es5.O/am=MgAAAADwD2AA8P_7bwBBtgPvGUABAgAAAAAAAACAAQAgAg/d=1/excm=_b,_tp,attributesview/ed=1/dg=0/wt=2/ujg=1/rs=AOaEmlFgR22eniG9Jao4OxPVmQcCPnNkKg/dti=1/m=_b,_tp:535
+[  704956ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///./node_modules/react-dom/cjs/react-dom.development.js:29889
+[  705024ms] [LOG] [HMR] connected @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:38
+[  712394ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  717242ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  717785ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/perfil:0
+[  717786ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/perfil:0
+[  717786ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/perfil:0
+[  720450ms] [ERROR] Warning: Function components cannot be given refs. Attempts to access this ref will fail. Did you mean to use React.forwardRef()?%s%s 
+
+Check the render method of `DialogClose`. 
+    at Button (webpack-internal:///./src/components/ui/button.tsx:42:11)
+    at DialogClose (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/close/DialogClose.js:28:5)
+    at div
+    at FloatingFocusManager (webpack-internal:///./node_modules/@base-ui/react/esm/floating-ui-react/components/FloatingFocusManager.js:143:5)
+    at DialogPopup (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/popup/DialogPopup.js:51:5)
+    at FloatingPortal (webpack-internal:///./node_modules/@base-ui/react/esm/floating-ui-react/components/FloatingPortal.js:126:5)
+    at DialogPortal (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/portal/DialogPortal.js:31:5)
+    at DialogPortal (webpack-internal:///./src/components/ui/dialog.tsx:53:14)
+    at DialogContent (webpack-internal:///./src/components/ui/dialog.tsx:90:11)
+    at DialogRoot (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/root/DialogRoot.js:21:51)
+    at Dialog (webpack-internal:///./src/components/ui/dialog.tsx:29:14)
+    at ConfirmDialog (webpack-internal:///./src/components/ui/confirm-dialog.tsx:13:11)
+    at main
+    at div
+    at div
+    at AppShell (webpack-internal:///./src/components/layout/AppShell.tsx:32:11)
+    at VagaDetailPage (webpack-internal:///./src/pages/comunidade/vagas/[id].tsx:488:11)
+    at SessionProvider (webpack-internal:///./node_modules/next-auth/react/index.js:365:24)
+    at App (webpack-internal:///./src/pages/_app.tsx:17:11)
+    at PathnameContextProviderAdapter (webpack-internal:///./node_modules/next/dist/shared/lib/router/adapters.js:81:11)
+    at ErrorBoundary (webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/ErrorBoundary.js:41:9)
+    at ReactDevOverlay (webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/ReactDevOverlay.js:33:11)
+    at Container (webpack-internal:///./node_modules/next/dist/client/index.js:81:1)
+    at AppContainer (webpack-internal:///./node_modules/next/dist/client/index.js:189:11)
+    at Root (webpack-internal:///./node_modules/next/dist/client/index.js:413:11) @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[  731777ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///./node_modules/react-dom/cjs/react-dom.development.js:29889
+[  731827ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/login:0
+[  731828ms] [LOG] [HMR] connected @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:38
+[  736791ms] [ERROR] Warning: Function components cannot be given refs. Attempts to access this ref will fail. Did you mean to use React.forwardRef()?%s%s 
+
+Check the render method of `DialogClose`. 
+    at Button (webpack-internal:///./src/components/ui/button.tsx:42:11)
+    at DialogClose (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/close/DialogClose.js:28:5)
+    at div
+    at FloatingFocusManager (webpack-internal:///./node_modules/@base-ui/react/esm/floating-ui-react/components/FloatingFocusManager.js:143:5)
+    at DialogPopup (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/popup/DialogPopup.js:51:5)
+    at FloatingPortal (webpack-internal:///./node_modules/@base-ui/react/esm/floating-ui-react/components/FloatingPortal.js:126:5)
+    at DialogPortal (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/portal/DialogPortal.js:31:5)
+    at DialogPortal (webpack-internal:///./src/components/ui/dialog.tsx:53:14)
+    at DialogContent (webpack-internal:///./src/components/ui/dialog.tsx:90:11)
+    at DialogRoot (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/root/DialogRoot.js:21:51)
+    at Dialog (webpack-internal:///./src/components/ui/dialog.tsx:29:14)
+    at ConfirmDialog (webpack-internal:///./src/components/ui/confirm-dialog.tsx:13:11)
+    at div
+    at AppShell (webpack-internal:///./src/components/layout/AppShell.tsx:32:11)
+    at Dashboard (webpack-internal:///./src/pages/dashboard/index.tsx:389:11)
+    at SessionProvider (webpack-internal:///./node_modules/next-auth/react/index.js:365:24)
+    at App (webpack-internal:///./src/pages/_app.tsx:17:11)
+    at PathnameContextProviderAdapter (webpack-internal:///./node_modules/next/dist/shared/lib/router/adapters.js:81:11)
+    at ErrorBoundary (webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/ErrorBoundary.js:41:9)
+    at ReactDevOverlay (webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/ReactDevOverlay.js:33:11)
+    at Container (webpack-internal:///./node_modules/next/dist/client/index.js:81:1)
+    at AppContainer (webpack-internal:///./node_modules/next/dist/client/index.js:189:11)
+    at Root (webpack-internal:///./node_modules/next/dist/client/index.js:413:11) @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[  737644ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///./node_modules/react-dom/cjs/react-dom.development.js:29889
+[  737658ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/login:0
+[  737659ms] [LOG] [HMR] connected @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:38
+[  740518ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///./node_modules/react-dom/cjs/react-dom.development.js:29889
+[  740552ms] [LOG] [HMR] connected @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:38
+[  741897ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/perfil:0
+[  741897ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/perfil:0
+[  741897ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/perfil:0
+[  829013ms] [ERROR] Warning: Function components cannot be given refs. Attempts to access this ref will fail. Did you mean to use React.forwardRef()?%s%s 
+
+Check the render method of `DialogClose`. 
+    at Button (webpack-internal:///./src/components/ui/button.tsx:42:11)
+    at DialogClose (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/close/DialogClose.js:28:5)
+    at div
+    at FloatingFocusManager (webpack-internal:///./node_modules/@base-ui/react/esm/floating-ui-react/components/FloatingFocusManager.js:143:5)
+    at DialogPopup (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/popup/DialogPopup.js:51:5)
+    at FloatingPortal (webpack-internal:///./node_modules/@base-ui/react/esm/floating-ui-react/components/FloatingPortal.js:126:5)
+    at DialogPortal (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/portal/DialogPortal.js:31:5)
+    at DialogPortal (webpack-internal:///./src/components/ui/dialog.tsx:53:14)
+    at DialogContent (webpack-internal:///./src/components/ui/dialog.tsx:90:11)
+    at DialogRoot (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/root/DialogRoot.js:21:51)
+    at Dialog (webpack-internal:///./src/components/ui/dialog.tsx:29:14)
+    at ConfirmDialog (webpack-internal:///./src/components/ui/confirm-dialog.tsx:13:11)
+    at div
+    at AppShell (webpack-internal:///./src/components/layout/AppShell.tsx:32:11)
+    at PerfilPage (webpack-internal:///./src/pages/perfil/index.tsx:42:11)
+    at SessionProvider (webpack-internal:///./node_modules/next-auth/react/index.js:365:24)
+    at App (webpack-internal:///./src/pages/_app.tsx:17:11)
+    at PathnameContextProviderAdapter (webpack-internal:///./node_modules/next/dist/shared/lib/router/adapters.js:81:11)
+    at ErrorBoundary (webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/ErrorBoundary.js:41:9)
+    at ReactDevOverlay (webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/ReactDevOverlay.js:33:11)
+    at Container (webpack-internal:///./node_modules/next/dist/client/index.js:81:1)
+    at AppContainer (webpack-internal:///./node_modules/next/dist/client/index.js:189:11)
+    at Root (webpack-internal:///./node_modules/next/dist/client/index.js:413:11) @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[  830015ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///./node_modules/react-dom/cjs/react-dom.development.js:29889
+[  830069ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/login:0
+[  830070ms] [LOG] [HMR] connected @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:38
+[  835483ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  835650ms] [LOG] [Fast Refresh] done in 168ms @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:190
+[  848850ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  880018ms] [LOG] Refreshing page data due to server-side change @ webpack-internal:///./node_modules/next/dist/client/page-bootstrap.js:100
+[  904680ms] [LOG] Refreshing page data due to server-side change @ webpack-internal:///./node_modules/next/dist/client/page-bootstrap.js:100
+[  915932ms] [LOG] Refreshing page data due to server-side change @ webpack-internal:///./node_modules/next/dist/client/page-bootstrap.js:100
+[  924212ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  924391ms] [LOG] [Fast Refresh] done in 179ms @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:190
+[  930947ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  940848ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  960667ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[ 1114949ms] [ERROR] Warning: Function components cannot be given refs. Attempts to access this ref will fail. Did you mean to use React.forwardRef()?%s%s 
+
+Check the render method of `DialogClose`. 
+    at Button (webpack-internal:///./src/components/ui/button.tsx:42:11)
+    at DialogClose (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/close/DialogClose.js:28:5)
+    at div
+    at FloatingFocusManager (webpack-internal:///./node_modules/@base-ui/react/esm/floating-ui-react/components/FloatingFocusManager.js:143:5)
+    at DialogPopup (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/popup/DialogPopup.js:51:5)
+    at FloatingPortal (webpack-internal:///./node_modules/@base-ui/react/esm/floating-ui-react/components/FloatingPortal.js:126:5)
+    at DialogPortal (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/portal/DialogPortal.js:31:5)
+    at DialogPortal (webpack-internal:///./src/components/ui/dialog.tsx:53:14)
+    at DialogContent (webpack-internal:///./src/components/ui/dialog.tsx:90:11)
+    at DialogRoot (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/root/DialogRoot.js:21:51)
+    at Dialog (webpack-internal:///./src/components/ui/dialog.tsx:29:14)
+    at ConfirmDialog (webpack-internal:///./src/components/ui/confirm-dialog.tsx:13:11)
+    at div
+    at AppShell (webpack-internal:///./src/components/layout/AppShell.tsx:32:11)
+    at Visitantes (webpack-internal:///./src/pages/visitantes/index.tsx:26:11)
+    at SessionProvider (webpack-internal:///./node_modules/next-auth/react/index.js:365:24)
+    at App (webpack-internal:///./src/pages/_app.tsx:17:11)
+    at PathnameContextProviderAdapter (webpack-internal:///./node_modules/next/dist/shared/lib/router/adapters.js:81:11)
+    at ErrorBoundary (webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/ErrorBoundary.js:41:9)
+    at ReactDevOverlay (webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/ReactDevOverlay.js:33:11)
+    at Container (webpack-internal:///./node_modules/next/dist/client/index.js:81:1)
+    at AppContainer (webpack-internal:///./node_modules/next/dist/client/index.js:189:11)
+    at Root (webpack-internal:///./node_modules/next/dist/client/index.js:413:11) @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[ 1116224ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[ 1116699ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///./node_modules/react-dom/cjs/react-dom.development.js:29889
+[ 1116756ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/login:0
+[ 1116757ms] [LOG] [HMR] connected @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:38
+[ 1118791ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[ 1120646ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[ 1121125ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/perfil:0
+[ 1121125ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/perfil:0
+[ 1121125ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/perfil:0
+[ 1130568ms] [ERROR] Warning: Function components cannot be given refs. Attempts to access this ref will fail. Did you mean to use React.forwardRef()?%s%s 
+
+Check the render method of `DialogClose`. 
+    at Button (webpack-internal:///./src/components/ui/button.tsx:42:11)
+    at DialogClose (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/close/DialogClose.js:28:5)
+    at div
+    at FloatingFocusManager (webpack-internal:///./node_modules/@base-ui/react/esm/floating-ui-react/components/FloatingFocusManager.js:143:5)
+    at DialogPopup (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/popup/DialogPopup.js:51:5)
+    at FloatingPortal (webpack-internal:///./node_modules/@base-ui/react/esm/floating-ui-react/components/FloatingPortal.js:126:5)
+    at DialogPortal (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/portal/DialogPortal.js:31:5)
+    at DialogPortal (webpack-internal:///./src/components/ui/dialog.tsx:53:14)
+    at DialogContent (webpack-internal:///./src/components/ui/dialog.tsx:90:11)
+    at DialogRoot (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/root/DialogRoot.js:21:51)
+    at Dialog (webpack-internal:///./src/components/ui/dialog.tsx:29:14)
+    at ConfirmDialog (webpack-internal:///./src/components/ui/confirm-dialog.tsx:13:11)
+    at div
+    at AppShell (webpack-internal:///./src/components/layout/AppShell.tsx:32:11)
+    at PerfilPage (webpack-internal:///./src/pages/perfil/index.tsx:42:11)
+    at SessionProvider (webpack-internal:///./node_modules/next-auth/react/index.js:365:24)
+    at App (webpack-internal:///./src/pages/_app.tsx:17:11)
+    at PathnameContextProviderAdapter (webpack-internal:///./node_modules/next/dist/shared/lib/router/adapters.js:81:11)
+    at ErrorBoundary (webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/ErrorBoundary.js:41:9)
+    at ReactDevOverlay (webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/ReactDevOverlay.js:33:11)
+    at Container (webpack-internal:///./node_modules/next/dist/client/index.js:81:1)
+    at AppContainer (webpack-internal:///./node_modules/next/dist/client/index.js:189:11)
+    at Root (webpack-internal:///./node_modules/next/dist/client/index.js:413:11) @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[ 1131570ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///./node_modules/react-dom/cjs/react-dom.development.js:29889
+[ 1131592ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/login:0
+[ 1131593ms] [LOG] [HMR] connected @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:38
+[ 1285027ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[ 1285193ms] [LOG] [Fast Refresh] done in 166ms @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:190
+[ 1285489ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[ 1285881ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[ 1286329ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[ 1286377ms] [LOG] [Fast Refresh] done in 48ms @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:190
+[ 1287871ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[ 1288372ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[ 1289776ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[ 1290043ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/perfil:0
+[ 1290043ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/perfil:0
+[ 1290043ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/perfil:0
+[ 1291701ms] [ERROR] Warning: Function components cannot be given refs. Attempts to access this ref will fail. Did you mean to use React.forwardRef()?%s%s 
+
+Check the render method of `DialogClose`. 
+    at Button (webpack-internal:///./src/components/ui/button.tsx:42:11)
+    at DialogClose (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/close/DialogClose.js:28:5)
+    at div
+    at FloatingFocusManager (webpack-internal:///./node_modules/@base-ui/react/esm/floating-ui-react/components/FloatingFocusManager.js:143:5)
+    at DialogPopup (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/popup/DialogPopup.js:51:5)
+    at FloatingPortal (webpack-internal:///./node_modules/@base-ui/react/esm/floating-ui-react/components/FloatingPortal.js:126:5)
+    at DialogPortal (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/portal/DialogPortal.js:31:5)
+    at DialogPortal (webpack-internal:///./src/components/ui/dialog.tsx:53:14)
+    at DialogContent (webpack-internal:///./src/components/ui/dialog.tsx:90:11)
+    at DialogRoot (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/root/DialogRoot.js:21:51)
+    at Dialog (webpack-internal:///./src/components/ui/dialog.tsx:29:14)
+    at ConfirmDialog (webpack-internal:///./src/components/ui/confirm-dialog.tsx:13:11)
+    at div
+    at AppShell (webpack-internal:///./src/components/layout/AppShell.tsx:32:11)
+    at PerfilPage (webpack-internal:///./src/pages/perfil/index.tsx:42:11)
+    at SessionProvider (webpack-internal:///./node_modules/next-auth/react/index.js:365:24)
+    at App (webpack-internal:///./src/pages/_app.tsx:17:11)
+    at PathnameContextProviderAdapter (webpack-internal:///./node_modules/next/dist/shared/lib/router/adapters.js:81:11)
+    at ErrorBoundary (webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/ErrorBoundary.js:41:9)
+    at ReactDevOverlay (webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/ReactDevOverlay.js:33:11)
+    at Container (webpack-internal:///./node_modules/next/dist/client/index.js:81:1)
+    at AppContainer (webpack-internal:///./node_modules/next/dist/client/index.js:189:11)
+    at Root (webpack-internal:///./node_modules/next/dist/client/index.js:413:11) @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[ 1293229ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///./node_modules/react-dom/cjs/react-dom.development.js:29889
+[ 1293282ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/login:0
+[ 1293283ms] [LOG] [HMR] connected @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:38
+[ 1295466ms] [LOG] Refreshing page data due to server-side change @ webpack-internal:///./node_modules/next/dist/client/page-bootstrap.js:100
+[ 1299684ms] [LOG] Refreshing page data due to server-side change @ webpack-internal:///./node_modules/next/dist/client/page-bootstrap.js:100
+[ 1311732ms] [LOG] Refreshing page data due to server-side change @ webpack-internal:///./node_modules/next/dist/client/page-bootstrap.js:100
+[ 1318009ms] [LOG] Refreshing page data due to server-side change @ webpack-internal:///./node_modules/next/dist/client/page-bootstrap.js:100
+[ 1324771ms] [LOG] Refreshing page data due to server-side change @ webpack-internal:///./node_modules/next/dist/client/page-bootstrap.js:100
+[ 1338125ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[ 1343776ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[ 1344006ms] [LOG] [Fast Refresh] done in 230ms @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:190
+[ 1347552ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[ 1347723ms] [LOG] [Fast Refresh] done in 170ms @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:190
+[ 1351880ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[ 1352107ms] [LOG] [Fast Refresh] done in 228ms @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:190
+[ 1358469ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[ 1358562ms] [LOG] [Fast Refresh] done in 93ms @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:190
+[ 1365114ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[ 1368797ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[ 1373913ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[ 1383163ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221

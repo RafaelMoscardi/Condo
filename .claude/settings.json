@@ -17,7 +17,8 @@
       "PowerShell(Get-Process -Id 1672 | Select-Object Id, ProcessName, CommandLine 2>&1; \\(Get-CimInstance Win32_Process -Filter \"ProcessId = 1672\"\\).CommandLine)",
       "Bash(curl -s \"http://localhost:3000/api/comunidade/loja/conversas?anuncioId=cmq36ffah0000tafz4axxilh8\" -H \"Cookie: next-auth.session-token=dummy\")",
       "PowerShell(cd \"c:\\\\Users\\\\Administrator\\\\Documents\\\\GitHub\\\\Condo\"; npx tsc --noEmit --skipLibCheck 2>&1 | Where-Object { $_ -match \"login|register\" })",
-      "Bash(node -e ' *)"
+      "Bash(node -e ' *)",
+      "Bash(npx prisma *)"
     ]
   }
 }

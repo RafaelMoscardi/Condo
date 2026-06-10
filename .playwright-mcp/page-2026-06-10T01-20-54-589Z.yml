@@ -1,0 +1,135 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e83]:
+      - complementary [ref=e84]:
+        - generic [ref=e86]:
+          - img [ref=e89]
+          - generic [ref=e94]:
+            - paragraph [ref=e95]: Condomínio
+            - paragraph [ref=e96]: Gestão Residencial
+        - navigation [ref=e97]:
+          - paragraph [ref=e98]: Menu
+          - link "Dashboard" [ref=e99] [cursor=pointer]:
+            - /url: /dashboard
+            - generic [ref=e100]:
+              - img [ref=e101]
+              - generic [ref=e106]: Dashboard
+          - link "Avisos" [ref=e108] [cursor=pointer]:
+            - /url: /avisos
+            - generic [ref=e109]:
+              - img [ref=e110]
+              - generic [ref=e113]: Avisos
+          - link "Ocorrências" [ref=e114] [cursor=pointer]:
+            - /url: /ocorrencias
+            - generic [ref=e115]:
+              - img [ref=e116]
+              - generic [ref=e118]: Ocorrências
+          - link "Reservas" [ref=e119] [cursor=pointer]:
+            - /url: /reservas
+            - generic [ref=e120]:
+              - img [ref=e121]
+              - generic [ref=e123]: Reservas
+          - link "Diretório" [ref=e124] [cursor=pointer]:
+            - /url: /porteiro/diretorio
+            - generic [ref=e125]:
+              - img [ref=e126]
+              - generic [ref=e130]: Diretório
+          - link "Comunidade" [ref=e131] [cursor=pointer]:
+            - /url: /comunidade
+            - generic [ref=e132]:
+              - img [ref=e133]
+              - generic [ref=e137]: Comunidade
+          - link "Moradores" [ref=e138] [cursor=pointer]:
+            - /url: /moradores
+            - generic [ref=e139]:
+              - img [ref=e140]
+              - generic [ref=e143]: Moradores
+          - link "Meu Perfil" [ref=e144] [cursor=pointer]:
+            - /url: /perfil
+            - generic [ref=e145]:
+              - img [ref=e146]
+              - generic [ref=e150]: Meu Perfil
+        - generic [ref=e152]:
+          - generic [ref=e155]: C
+          - generic [ref=e156]:
+            - paragraph [ref=e157]: Carlos Síndico
+            - generic [ref=e158]: Síndico
+          - button "Sair" [ref=e159] [cursor=pointer]:
+            - img [ref=e160]
+      - generic [ref=e163]:
+        - banner [ref=e164]:
+          - heading "Dashboard" [level=1] [ref=e166]
+          - button "Sair" [ref=e168] [cursor=pointer]:
+            - img
+            - text: Sair
+        - main [ref=e169]:
+          - generic [ref=e170]:
+            - generic [ref=e172]:
+              - generic [ref=e173]:
+                - paragraph [ref=e174]: Boa noite,
+                - heading "Bem-vindo Carlos!" [level=2] [ref=e175]
+                - paragraph [ref=e176]: terça-feira, 9 de junho
+                - paragraph [ref=e177]: Aqui está o resumo do condomínio.
+              - img [ref=e179]
+            - generic [ref=e182]:
+              - heading "Resumo" [level=3] [ref=e183]
+              - generic [ref=e184]:
+                - generic [ref=e185]:
+                  - generic [ref=e186]:
+                    - img [ref=e188]
+                    - generic [ref=e191]:
+                      - img [ref=e192]
+                      - text: ativo
+                  - paragraph [ref=e195]: "1"
+                  - paragraph [ref=e196]: Avisos ativos
+                - generic [ref=e197]:
+                  - generic [ref=e198]:
+                    - img [ref=e200]
+                    - generic [ref=e202]:
+                      - img [ref=e203]
+                      - text: ativo
+                  - paragraph [ref=e206]: "1"
+                  - paragraph [ref=e207]: Ocorrências abertas
+                - generic [ref=e208]:
+                  - img [ref=e211]
+                  - paragraph [ref=e213]: "0"
+                  - paragraph [ref=e214]: Reservas pendentes
+            - generic [ref=e215]:
+              - generic [ref=e216]:
+                - heading "Ações Rápidas" [level=3] [ref=e217]
+                - img [ref=e218]
+              - generic [ref=e219]:
+                - link "Novo Aviso Publique um comunicado" [ref=e220] [cursor=pointer]:
+                  - /url: /avisos/novo
+                  - generic [ref=e221]:
+                    - img [ref=e223]
+                    - generic [ref=e226]:
+                      - paragraph [ref=e227]: Novo Aviso
+                      - paragraph [ref=e228]: Publique um comunicado
+                    - img [ref=e229]
+                - link "Ocorrências Veja os registros" [ref=e231] [cursor=pointer]:
+                  - /url: /ocorrencias
+                  - generic [ref=e232]:
+                    - img [ref=e234]
+                    - generic [ref=e236]:
+                      - paragraph [ref=e237]: Ocorrências
+                      - paragraph [ref=e238]: Veja os registros
+                    - img [ref=e239]
+                - link "Moradores Gerencie usuários" [ref=e241] [cursor=pointer]:
+                  - /url: /moradores
+                  - generic [ref=e242]:
+                    - img [ref=e244]
+                    - generic [ref=e249]:
+                      - paragraph [ref=e250]: Moradores
+                      - paragraph [ref=e251]: Gerencie usuários
+                    - img [ref=e252]
+                - link "Reservas Aprovar reservas" [ref=e254] [cursor=pointer]:
+                  - /url: /reservas
+                  - generic [ref=e255]:
+                    - img [ref=e257]
+                    - generic [ref=e259]:
+                      - paragraph [ref=e260]: Reservas
+                      - paragraph [ref=e261]: Aprovar reservas
+                    - img [ref=e262]
+    - region "Notifications alt+T"
+  - alert [ref=e82]: Dashboard

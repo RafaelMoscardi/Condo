@@ -1,0 +1,48 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - img [ref=e8]
+        - generic [ref=e12]: Condomínio
+      - generic [ref=e13]:
+        - button "Entrar" [ref=e14] [cursor=pointer]
+        - button "Criar conta" [ref=e15] [cursor=pointer]
+      - generic [ref=e16]:
+        - heading "Bem-vindo de volta" [level=2] [ref=e17]
+        - paragraph [ref=e18]: Entre com suas credenciais de acesso
+      - generic [ref=e19]:
+        - button "Entrar com Google" [ref=e20] [cursor=pointer]:
+          - img [ref=e21]
+          - text: Entrar com Google
+        - generic [ref=e28]: ou
+        - generic [ref=e30]:
+          - generic [ref=e31]:
+            - generic [ref=e32]: E-mail, CPF ou celular
+            - generic [ref=e33]:
+              - img [ref=e34]
+              - textbox "E-mail, CPF ou celular" [ref=e37]
+          - generic [ref=e38]:
+            - generic [ref=e39]:
+              - generic [ref=e40]: Senha
+              - link "Esqueci minha senha" [ref=e41] [cursor=pointer]:
+                - /url: /esqueci-senha
+            - generic [ref=e42]:
+              - img [ref=e43]
+              - textbox "Senha" [ref=e46]:
+                - /placeholder: ••••••••
+          - button "Entrar" [ref=e47] [cursor=pointer]:
+            - text: Entrar
+            - img
+          - generic [ref=e48]:
+            - paragraph [ref=e49]: Acesso de teste
+            - generic [ref=e50]:
+              - generic [ref=e51]: "Síndico:"
+              - generic [ref=e52]: sindico@condo.com
+              - generic [ref=e53]: "Morador:"
+              - generic [ref=e54]: morador@condo.com
+              - generic [ref=e55]: "Porteiro:"
+              - generic [ref=e56]: porteiro@condo.com
+              - generic [ref=e57]: "Senha:"
+              - generic [ref=e58]: senha123
+    - region "Notifications alt+T"
+  - alert [ref=e59]

@@ -1,7 +1,9 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import { GetServerSideProps } from "next";
 import { getServerSession } from "next-auth/next";
-import { authOptions } from "@/pages/api/auth/[...nextauth]";
+import { authOptions } from "@/lib/auth";
+import { prisma } from "@/lib/prisma";
+import { ConfirmDialog } from "@/components/ui/confirm-dialog";
 import Link from "next/link";
 import AppShell from "@/components/layout/AppShell";
 import { Button } from "@/components/ui/button";
@@ -33,6 +35,7 @@ import {
   ImagePlus,
   X,
   ChevronRight,
+  MessageCircle,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -233,6 +236,7 @@ function VagasTab({ userId, perfil }: { userId: string; perfil: string }) {
   const [vagas, setVagas] = useState<VagaGaragem[]>([]);
   const [filtro, setFiltro] = useState<"disponiveis" | "todas">("disponiveis");
   const [dialogOpen, setDialogOpen] = useState(false);
+  const [confirmId, setConfirmId] = useState<string | null>(null);
   const [salvando, setSalvando] = useState(false);
   const [titulo, setTitulo] = useState("");
   const [descricao, setDescricao] = useState("");
@@ -250,7 +254,9 @@ function VagasTab({ userId, perfil }: { userId: string; perfil: string }) {
   useEffect(() => { fetchVagas(); }, [fetchVagas]);
 
   const vagasFiltradas =
-    filtro === "disponiveis" ? vagas.filter((v) => v.disponivel) : vagas;
+    filtro === "disponiveis"
+      ? vagas.filter((v) => v.disponivel || v.morador.id === userId)
+      : vagas;
 
   const handleCreate = async () => {
     if (!titulo || !valor) return toast.error("Preencha o título e o valor");
@@ -286,9 +292,9 @@ function VagasTab({ userId, perfil }: { userId: string; perfil: string }) {
   };
 
   const handleDelete = async (id: string) => {
-    if (!confirm("Remover este anúncio?")) return;
     const res = await fetch(`/api/comunidade/vagas/${id}`, { method: "DELETE" });
     if (res.ok) { fetchVagas(); toast.success("Anúncio removido"); }
+    setConfirmId(null);
   };
 
   const canCreate = ["MORADOR", "SINDICO"].includes(perfil);
@@ -330,10 +336,11 @@ function VagasTab({ userId, perfil }: { userId: string; perfil: string }) {
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
           {vagasFiltradas.map((vaga) => (
-            <div
+            <Link
               key={vaga.id}
+              href={`/comunidade/vagas/${vaga.id}`}
               className={cn(
-                "border border-border rounded-xl p-4 bg-card hover:shadow-md transition-shadow flex flex-col",
+                "border border-border rounded-xl p-4 bg-card hover:shadow-md transition-shadow flex flex-col cursor-pointer",
                 !vaga.disponivel && "opacity-70"
               )}
             >
@@ -386,29 +393,12 @@ function VagasTab({ userId, perfil }: { userId: string; perfil: string }) {
                     {vaga.morador.bloco ? `-${vaga.morador.bloco}` : ""}
                   </span>
                 )}
+                <span className="ml-auto flex items-center gap-1 text-indigo-500 flex-shrink-0">
+                  <MessageCircle className="w-3.5 h-3.5" />
+                  {vaga.morador.id === userId ? "Ver interessados" : "Entrar em contato"}
+                </span>
               </div>
-
-              {vaga.morador.id === userId && (
-                <div className="flex gap-2 mt-3 pt-3 border-t border-border/50">
-                  <Button
-                    size="sm"
-                    variant="outline"
-                    className="flex-1 text-xs"
-                    onClick={() => toggleDisponivel(vaga.id, vaga.disponivel)}
-                  >
-                    {vaga.disponivel ? "Marcar Indisponível" : "Reativar"}
-                  </Button>
-                  <Button
-                    size="icon-sm"
-                    variant="ghost"
-                    className="text-red-500 hover:text-red-600 hover:bg-red-50"
-                    onClick={() => handleDelete(vaga.id)}
-                  >
-                    <Trash2 className="w-4 h-4" />
-                  </Button>
-                </div>
-              )}
-            </div>
+            </Link>
           ))}
         </div>
       )}
@@ -515,6 +505,15 @@ function VagasTab({ userId, perfil }: { userId: string; perfil: string }) {
           </DialogFooter>
         </DialogContent>
       </Dialog>
+
+      <ConfirmDialog
+        open={confirmId !== null}
+        title="Remover vaga"
+        message="Remover este anúncio de vaga? Esta ação não pode ser desfeita."
+        confirmLabel="Remover"
+        onConfirm={() => confirmId && handleDelete(confirmId)}
+        onCancel={() => setConfirmId(null)}
+      />
     </div>
   );
 }
@@ -843,7 +842,7 @@ export default function ComunidadePage({ perfil, userId }: Props) {
   const [activeTab, setActiveTab] = useState<Tab>("chat");
 
   return (
-    <AppShell title="Comunidade">
+    <AppShell titulo="Comunidade">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8">
         <div className="mb-8">
           <h1 className="text-2xl font-bold tracking-tight">Comunidade</h1>
@@ -883,10 +882,17 @@ export default function ComunidadePage({ perfil, userId }: Props) {
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const session = await getServerSession(context.req, context.res, authOptions);
   if (!session) return { redirect: { destination: "/login", permanent: false } };
+
+  let userId = session.user.id ?? "";
+  if (!userId && session.user.email) {
+    const user = await prisma.user.findUnique({ where: { email: session.user.email }, select: { id: true } });
+    userId = user?.id ?? "";
+  }
+
   return {
     props: {
       perfil: session.user.perfil ?? "MORADOR",
-      userId: session.user.id ?? "",
+      userId,
     },
   };
 };

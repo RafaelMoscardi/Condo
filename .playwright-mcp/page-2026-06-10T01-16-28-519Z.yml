@@ -1,0 +1,111 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e200]:
+      - complementary [ref=e201]:
+        - generic [ref=e203]:
+          - img [ref=e206]
+          - generic [ref=e211]:
+            - paragraph [ref=e212]: Condomínio
+            - paragraph [ref=e213]: Gestão Residencial
+        - navigation [ref=e214]:
+          - paragraph [ref=e215]: Menu
+          - link "Dashboard" [ref=e216] [cursor=pointer]:
+            - /url: /dashboard
+            - generic [ref=e217]:
+              - img [ref=e218]
+              - generic [ref=e223]: Dashboard
+          - link "Avisos" [ref=e224] [cursor=pointer]:
+            - /url: /avisos
+            - generic [ref=e225]:
+              - img [ref=e226]
+              - generic [ref=e229]: Avisos
+          - link "Ocorrências" [ref=e230] [cursor=pointer]:
+            - /url: /ocorrencias
+            - generic [ref=e231]:
+              - img [ref=e232]
+              - generic [ref=e234]: Ocorrências
+          - link "Reservas" [ref=e235] [cursor=pointer]:
+            - /url: /reservas
+            - generic [ref=e236]:
+              - img [ref=e237]
+              - generic [ref=e239]: Reservas
+          - link "Diretório" [ref=e240] [cursor=pointer]:
+            - /url: /porteiro/diretorio
+            - generic [ref=e241]:
+              - img [ref=e242]
+              - generic [ref=e246]: Diretório
+          - link "Comunidade" [ref=e247] [cursor=pointer]:
+            - /url: /comunidade
+            - generic [ref=e248]:
+              - img [ref=e249]
+              - generic [ref=e253]: Comunidade
+          - link "Moradores" [ref=e254] [cursor=pointer]:
+            - /url: /moradores
+            - generic [ref=e255]:
+              - img [ref=e256]
+              - generic [ref=e259]: Moradores
+          - link "Meu Perfil" [ref=e261] [cursor=pointer]:
+            - /url: /perfil
+            - generic [ref=e262]:
+              - img [ref=e263]
+              - generic [ref=e267]: Meu Perfil
+        - generic [ref=e269]:
+          - generic [ref=e272]: C
+          - generic [ref=e273]:
+            - paragraph [ref=e274]: Carlos Síndico
+            - generic [ref=e275]: Síndico
+          - button "Sair" [ref=e276] [cursor=pointer]:
+            - img [ref=e277]
+      - generic [ref=e280]:
+        - banner [ref=e281]:
+          - heading "Novo Usuário" [level=1] [ref=e283]
+          - button "Sair" [ref=e285] [cursor=pointer]:
+            - img
+            - text: Sair
+        - main [ref=e286]:
+          - generic [ref=e287]:
+            - link "Voltar" [ref=e288] [cursor=pointer]:
+              - /url: /moradores
+              - img [ref=e289]
+              - text: Voltar
+            - generic [ref=e291]:
+              - heading "Cadastrar Novo Usuário" [level=2] [ref=e292]
+              - generic [ref=e293]:
+                - generic [ref=e294]:
+                  - generic [ref=e295]: Nome completo *
+                  - generic [ref=e296]:
+                    - img [ref=e297]
+                    - 'textbox "Ex: João da Silva" [ref=e300]'
+                - generic [ref=e301]:
+                  - generic [ref=e302]: E-mail *
+                  - generic [ref=e303]:
+                    - img [ref=e304]
+                    - textbox "joao@email.com" [ref=e307]: morador@condo.com
+                - generic [ref=e308]:
+                  - generic [ref=e309]: Senha * (mín. 6 caracteres)
+                  - generic [ref=e310]:
+                    - img [ref=e311]
+                    - textbox "••••••••" [ref=e314]: senha123
+                - generic [ref=e315]:
+                  - generic [ref=e316]: Perfil *
+                  - combobox [ref=e317] [cursor=pointer]:
+                    - generic [ref=e318]: MORADOR
+                    - img: ▼
+                  - textbox [ref=e319]: MORADOR
+                - generic [ref=e320]:
+                  - generic [ref=e321]:
+                    - generic [ref=e322]: Apartamento
+                    - generic [ref=e323]:
+                      - img [ref=e324]
+                      - 'textbox "Ex: 101" [ref=e327]'
+                  - generic [ref=e328]:
+                    - generic [ref=e329]: Bloco
+                    - generic [ref=e330]:
+                      - img [ref=e331]
+                      - 'textbox "Ex: A" [ref=e334]'
+                - generic [ref=e335]:
+                  - button "Cadastrar Usuário" [ref=e336] [cursor=pointer]
+                  - button "Cancelar" [ref=e337] [cursor=pointer]
+            - paragraph [ref=e339]: "Senha inicial: o usuário receberá a senha definida aqui e poderá utilizá-la para o primeiro acesso. Troca de senha está disponível futuramente."
+    - region "Notifications alt+T"
+  - alert [ref=e15]: Novo Usuário

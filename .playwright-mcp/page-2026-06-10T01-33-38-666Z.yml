@@ -1,0 +1,102 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - complementary [ref=e16]:
+        - generic [ref=e18]:
+          - img [ref=e21]
+          - generic [ref=e26]:
+            - paragraph [ref=e27]: Condomínio
+            - paragraph [ref=e28]: Gestão Residencial
+        - navigation [ref=e29]:
+          - paragraph [ref=e30]: Menu
+          - link "Dashboard" [ref=e31] [cursor=pointer]:
+            - /url: /dashboard
+            - generic [ref=e32]:
+              - img [ref=e33]
+              - generic [ref=e38]: Dashboard
+          - link "Avisos" [ref=e39] [cursor=pointer]:
+            - /url: /avisos
+            - generic [ref=e40]:
+              - img [ref=e41]
+              - generic [ref=e44]: Avisos
+          - link "Ocorrências" [ref=e45] [cursor=pointer]:
+            - /url: /ocorrencias
+            - generic [ref=e46]:
+              - img [ref=e47]
+              - generic [ref=e49]: Ocorrências
+          - link "Reservas" [ref=e50] [cursor=pointer]:
+            - /url: /reservas
+            - generic [ref=e51]:
+              - img [ref=e52]
+              - generic [ref=e54]: Reservas
+          - link "Diretório" [ref=e55] [cursor=pointer]:
+            - /url: /porteiro/diretorio
+            - generic [ref=e56]:
+              - img [ref=e57]
+              - generic [ref=e61]: Diretório
+          - link "Comunidade" [ref=e62] [cursor=pointer]:
+            - /url: /comunidade
+            - generic [ref=e63]:
+              - img [ref=e64]
+              - generic [ref=e68]: Comunidade
+          - link "Moradores" [ref=e70] [cursor=pointer]:
+            - /url: /moradores
+            - generic [ref=e71]:
+              - img [ref=e72]
+              - generic [ref=e75]: Moradores
+          - link "Meu Perfil" [ref=e76] [cursor=pointer]:
+            - /url: /perfil
+            - generic [ref=e77]:
+              - img [ref=e78]
+              - generic [ref=e82]: Meu Perfil
+        - generic [ref=e84]:
+          - generic [ref=e87]: C
+          - generic [ref=e88]:
+            - paragraph [ref=e89]: Carlos Síndico
+            - generic [ref=e90]: Síndico
+          - button "Sair" [ref=e91] [cursor=pointer]:
+            - img [ref=e92]
+      - generic [ref=e95]:
+        - banner [ref=e96]:
+          - heading "Comunidade" [level=1] [ref=e98]
+          - button "Sair" [ref=e100] [cursor=pointer]:
+            - img
+            - text: Sair
+        - main [ref=e101]:
+          - generic [ref=e102]:
+            - generic [ref=e103]:
+              - heading "Comunidade" [level=1] [ref=e104]
+              - paragraph [ref=e105]: Conecte-se com os moradores do condomínio
+            - generic [ref=e106]:
+              - button "Chat" [ref=e107] [cursor=pointer]:
+                - img [ref=e108]
+                - text: Chat
+              - button "Vagas de Garagem" [active] [ref=e110] [cursor=pointer]:
+                - img [ref=e111]
+                - text: Vagas de Garagem
+              - button "Loja" [ref=e115] [cursor=pointer]:
+                - img [ref=e116]
+                - text: Loja
+            - generic [ref=e119]:
+              - generic [ref=e120]:
+                - generic [ref=e121]:
+                  - button "Disponíveis" [ref=e122] [cursor=pointer]
+                  - button "Todas" [ref=e123] [cursor=pointer]
+                - button "Anunciar Vaga" [ref=e124] [cursor=pointer]:
+                  - img
+                  - text: Anunciar Vaga
+              - link "Aluguel R$ 400,00/mês VAGA MAIS BROCANTE COBERTA DE PELO E VAP AUTOMATICA R Rafael Moscardi · Apt 300-A Entrar em contato" [ref=e126] [cursor=pointer]:
+                - /url: /comunidade/vagas/cmq7bkhja000s10ygnhhe1tda
+                - generic [ref=e127]:
+                  - generic [ref=e129]: Aluguel
+                  - generic [ref=e130]: R$ 400,00/mês
+                - heading "VAGA MAIS BROCANTE COBERTA DE PELO E VAP AUTOMATICA" [level=3] [ref=e131]
+                - generic [ref=e132]:
+                  - generic [ref=e133]: R
+                  - generic [ref=e134]: Rafael Moscardi
+                  - generic [ref=e135]: · Apt 300-A
+                  - generic [ref=e136]:
+                    - img [ref=e137]
+                    - text: Entrar em contato
+    - region "Notifications alt+T"
+  - alert [ref=e15]

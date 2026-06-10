@@ -1,0 +1,212 @@
+[     123ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///./node_modules/react-dom/cjs/react-dom.development.js:29889
+[     139ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/login:0
+[     140ms] [LOG] [HMR] connected @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:38
+[    6386ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://accounts.google.com/v3/signin/identifier?opparams=%253F&dsh=S-1005626828%3A1781049314046375&client_id=439592955955-ivoi93ujai573amonpi7q7uefja71p1g.apps.googleusercontent.com&code_challenge=5er-WSSNKYYVxM-sJF9CRRR9c2njVmmbY_I78fAsMaw&code_challenge_method=S256&o2v=2&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fapi%2Fauth%2Fcallback%2Fgoogle&response_type=code&scope=openid+email+profile&service=lso&state=UwfhRR_K9o0Sy6MxjnR6YWMIIMogYdrlJ4ql7B_AucU&flowName=GeneralOAuthFlow&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hAPPJfBuQA_FFNGZieNpnqkjATw__Lf5byAAYng1LwKkf-DfYWzrVcO1FTqPs9FHG0Oba2IMk3IYSSXCKuNgfwnAxNGKW-r6VCowzECKJpfLsdZGYiwop7DNL9BFGUwpENFQ2orqaBVvxhFpEL4mVkaJDeA06sJ-pUAuJe7A0ueHzbj4m-oFk0qSmU-VTG4hbIrp81NpUIzzbmSab9f2n1LdLtiCTfHEm5_ikOHqL3iqkpltYd2jc6ZZwCbzG_d3h2W1LbgibgHZ6klNmb90TipPXdAQEsQySqUQ8Lz8jiTWaFxHdzmmAsb7V260n3m79_S2XmcYa93HHGxr0UFHvdXt8zgWNq3XZtODxltE4U_Gq4yyOqDiVnWcEKCpZPa8p8DdL4IjzQ-itvxGgoGBr3yansy9U2ubOjjw566wWk8gAlswZy6TVRs7HpaXtFKBgIvM_MHHxVyUuNSqtdwITn0DH0Ku7A%26flowName%3DGeneralOAuthFlow%26as%3DS-1005626828%253A1781049314046375%26client_id%3D439592955955-ivoi93ujai573amonpi7q7uefja71p1g.apps.googleusercontent.com%26requestPath%3D%252Fsignin%252Foauth%252Fconsent%23&app_domain=http%3A%2F%2Flocalhost%3A3000&rart=ANgoxcfjAahGf4JNPRhl969tMDVZTl3MQrHzot7Dwj6NZ_UiHZ9XEs2i2JIVpyjuWdOa0Of6UJ4Y-mh31cQ38ch-OBYLd17CujSU0DES87VLY-cfYGNiqTA:0
+[    6391ms] [LOG] %c%s color: red; background: yellow; font-size: 24px; AVISO @ https://www.gstatic.com/_/mss/boq-identity/_/js/k=boq-identity.AccountsSignInUi.pt_BR.qfs3D55PnpA.es5.O/am=EQ0AAAAMin-EDAD-__4bAIAAgmwHfM8CaAKEDAAAAAAAAAAAWAAAgEY/d=1/excm=_b,_tp,identifierview/ed=1/dg=0/wt=2/ujg=1/rs=AOaEmlE4FgRfNePD2MDP_JmLcIDdKBAKmg/dti=1/m=_b,_tp:549
+[    6391ms] [LOG] %c%s font-size: 18px; O uso deste console pode permitir que invasores falsifiquem sua identidade para roubar informações por meio de um ataque chamado Self-XSS.
+Não insira nem cole códigos que você não conheça. @ https://www.gstatic.com/_/mss/boq-identity/_/js/k=boq-identity.AccountsSignInUi.pt_BR.qfs3D55PnpA.es5.O/am=EQ0AAAAMin-EDAD-__4bAIAAgmwHfM8CaAKEDAAAAAAAAAAAWAAAgEY/d=1/excm=_b,_tp,identifierview/ed=1/dg=0/wt=2/ujg=1/rs=AOaEmlE4FgRfNePD2MDP_JmLcIDdKBAKmg/dti=1/m=_b,_tp:549
+[   29709ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///./node_modules/react-dom/cjs/react-dom.development.js:29889
+[   29764ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/login:0
+[   29765ms] [LOG] [HMR] connected @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:38
+[   31402ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://accounts.google.com/v3/signin/identifier?opparams=%253F&dsh=S321739438%3A1781049339204964&client_id=439592955955-ivoi93ujai573amonpi7q7uefja71p1g.apps.googleusercontent.com&code_challenge=-JHAQMWOUomcvfHe0eNwj-KZwkZccj5KeBitWtBhc8I&code_challenge_method=S256&o2v=2&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fapi%2Fauth%2Fcallback%2Fgoogle&response_type=code&scope=openid+email+profile&service=lso&state=bpV6P8KoSEQ82lOZeBN6ShvYaCe_AdmQWnUvBHD-0A0&flowName=GeneralOAuthFlow&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hANd48h8JAJeDQILTNPJQj6U9Z9g_crmOQZzBc0xSH5HAXQErvN46yIElhHNx_MexiaKWjnWJ1gDgveghEjMiL8BvsJSqI2D0H_Ajgt0SMPH5O53hwFbXa0jr5NMo-xaFUte5IzdCK3e7M3BOlRTMU0Wd8rSLEJ0XRfvSytl9uNLWxLbA6kv0miB2l6uROCRWccNEhbrTG6yhyJBkfJAmHfTgnXRxjN9GWYbti4diqYjQEeifc3--cjll5FntBFoWgakyXDDbi0S00SLoKF2qYdCeGWTW6_of1m6ICQuqS0Zmn4g-aqQZLRb27xwBTYbb29pAObV7RAcljvnG-2i-QqcZ0pCylvswDvOiQjqKAki8VDUGdR1RlUJ9-4G6d_uut7I0vnWYJWbqwdVdWlJVUIeq_ODbvDqCE0YsqSPsLySy1piStfthiQYhkew-8e6tiITiqPXWvREgUXTC1ztlRJUCIpWkQ%26flowName%3DGeneralOAuthFlow%26as%3DS321739438%253A1781049339204964%26client_id%3D439592955955-ivoi93ujai573amonpi7q7uefja71p1g.apps.googleusercontent.com%26requestPath%3D%252Fsignin%252Foauth%252Fconsent%23&app_domain=http%3A%2F%2Flocalhost%3A3000&rart=ANgoxcf1jyGXWb_tihuHtWpgMtY3WhSkauqcjQD7TvOcA-FIxlXSJPE3XpDSF7tLnrqbeNjkkuPXIf2qhAaN9r4IeStonFuHYBrGJXjEr3GH29MEV4vxcXs:0
+[   31408ms] [LOG] %c%s color: red; background: yellow; font-size: 24px; AVISO @ https://www.gstatic.com/_/mss/boq-identity/_/js/k=boq-identity.AccountsSignInUi.pt_BR.qfs3D55PnpA.es5.O/am=EQ0AAAAMin-EDAD-__4bAIAAgmwHfM8CaAKEDAAAAAAAAAAAWAAAgEY/d=1/excm=_b,_tp,identifierview/ed=1/dg=0/wt=2/ujg=1/rs=AOaEmlE4FgRfNePD2MDP_JmLcIDdKBAKmg/dti=1/m=_b,_tp:549
+[   31408ms] [LOG] %c%s font-size: 18px; O uso deste console pode permitir que invasores falsifiquem sua identidade para roubar informações por meio de um ataque chamado Self-XSS.
+Não insira nem cole códigos que você não conheça. @ https://www.gstatic.com/_/mss/boq-identity/_/js/k=boq-identity.AccountsSignInUi.pt_BR.qfs3D55PnpA.es5.O/am=EQ0AAAAMin-EDAD-__4bAIAAgmwHfM8CaAKEDAAAAAAAAAAAWAAAgEY/d=1/excm=_b,_tp,identifierview/ed=1/dg=0/wt=2/ujg=1/rs=AOaEmlE4FgRfNePD2MDP_JmLcIDdKBAKmg/dti=1/m=_b,_tp:549
+[   38766ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://accounts.google.com/v3/signin/challenge/pwd?TL=ADCchmZDkQrjFEcILcBDA8zPg0fhCcihHGT1Yfj9x43xNUJHaOri8psWwUxlhN-T&app_domain=http%3A%2F%2Flocalhost%3A3000&checkConnection=youtube%3A92&checkedDomains=youtube&cid=2&client_id=439592955955-ivoi93ujai573amonpi7q7uefja71p1g.apps.googleusercontent.com&code_challenge=-JHAQMWOUomcvfHe0eNwj-KZwkZccj5KeBitWtBhc8I&code_challenge_method=S256&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hANd48h8JAJeDQILTNPJQj6U9Z9g_crmOQZzBc0xSH5HAXQErvN46yIElhHNx_MexiaKWjnWJ1gDgveghEjMiL8BvsJSqI2D0H_Ajgt0SMPH5O53hwFbXa0jr5NMo-xaFUte5IzdCK3e7M3BOlRTMU0Wd8rSLEJ0XRfvSytl9uNLWxLbA6kv0miB2l6uROCRWccNEhbrTG6yhyJBkfJAmHfTgnXRxjN9GWYbti4diqYjQEeifc3--cjll5FntBFoWgakyXDDbi0S00SLoKF2qYdCeGWTW6_of1m6ICQuqS0Zmn4g-aqQZLRb27xwBTYbb29pAObV7RAcljvnG-2i-QqcZ0pCylvswDvOiQjqKAki8VDUGdR1RlUJ9-4G6d_uut7I0vnWYJWbqwdVdWlJVUIeq_ODbvDqCE0YsqSPsLySy1piStfthiQYhkew-8e6tiITiqPXWvREgUXTC1ztlRJUCIpWkQ%26flowName%3DGeneralOAuthFlow%26as%3DS321739438%253A1781049339204964%26client_id%3D439592955955-ivoi93ujai573amonpi7q7uefja71p1g.apps.googleusercontent.com%26requestPath%3D%252Fsignin%252Foauth%252Fconsent%23&dsh=S321739438%3A1781049339204964&flowName=GeneralOAuthFlow&o2v=2&opparams=%253F&pstMsg=1&rart=ANgoxcf1jyGXWb_tihuHtWpgMtY3WhSkauqcjQD7TvOcA-FIxlXSJPE3XpDSF7tLnrqbeNjkkuPXIf2qhAaN9r4IeStonFuHYBrGJXjEr3GH29MEV4vxcXs&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fapi%2Fauth%2Fcallback%2Fgoogle&response_type=code&scope=openid%20email%20profile&service=lso&state=bpV6P8KoSEQ82lOZeBN6ShvYaCe_AdmQWnUvBHD-0A0:0
+[   31402ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://accounts.google.com/v3/signin/identifier?opparams=%253F&dsh=S321739438%3A1781049339204964&client_id=439592955955-ivoi93ujai573amonpi7q7uefja71p1g.apps.googleusercontent.com&code_challenge=-JHAQMWOUomcvfHe0eNwj-KZwkZccj5KeBitWtBhc8I&code_challenge_method=S256&o2v=2&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fapi%2Fauth%2Fcallback%2Fgoogle&response_type=code&scope=openid+email+profile&service=lso&state=bpV6P8KoSEQ82lOZeBN6ShvYaCe_AdmQWnUvBHD-0A0&flowName=GeneralOAuthFlow&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hANd48h8JAJeDQILTNPJQj6U9Z9g_crmOQZzBc0xSH5HAXQErvN46yIElhHNx_MexiaKWjnWJ1gDgveghEjMiL8BvsJSqI2D0H_Ajgt0SMPH5O53hwFbXa0jr5NMo-xaFUte5IzdCK3e7M3BOlRTMU0Wd8rSLEJ0XRfvSytl9uNLWxLbA6kv0miB2l6uROCRWccNEhbrTG6yhyJBkfJAmHfTgnXRxjN9GWYbti4diqYjQEeifc3--cjll5FntBFoWgakyXDDbi0S00SLoKF2qYdCeGWTW6_of1m6ICQuqS0Zmn4g-aqQZLRb27xwBTYbb29pAObV7RAcljvnG-2i-QqcZ0pCylvswDvOiQjqKAki8VDUGdR1RlUJ9-4G6d_uut7I0vnWYJWbqwdVdWlJVUIeq_ODbvDqCE0YsqSPsLySy1piStfthiQYhkew-8e6tiITiqPXWvREgUXTC1ztlRJUCIpWkQ%26flowName%3DGeneralOAuthFlow%26as%3DS321739438%253A1781049339204964%26client_id%3D439592955955-ivoi93ujai573amonpi7q7uefja71p1g.apps.googleusercontent.com%26requestPath%3D%252Fsignin%252Foauth%252Fconsent%23&app_domain=http%3A%2F%2Flocalhost%3A3000&rart=ANgoxcf1jyGXWb_tihuHtWpgMtY3WhSkauqcjQD7TvOcA-FIxlXSJPE3XpDSF7tLnrqbeNjkkuPXIf2qhAaN9r4IeStonFuHYBrGJXjEr3GH29MEV4vxcXs:0
+[   38766ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://accounts.google.com/v3/signin/challenge/pwd?TL=ADCchmZDkQrjFEcILcBDA8zPg0fhCcihHGT1Yfj9x43xNUJHaOri8psWwUxlhN-T&app_domain=http%3A%2F%2Flocalhost%3A3000&checkConnection=youtube%3A92&checkedDomains=youtube&cid=2&client_id=439592955955-ivoi93ujai573amonpi7q7uefja71p1g.apps.googleusercontent.com&code_challenge=-JHAQMWOUomcvfHe0eNwj-KZwkZccj5KeBitWtBhc8I&code_challenge_method=S256&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hANd48h8JAJeDQILTNPJQj6U9Z9g_crmOQZzBc0xSH5HAXQErvN46yIElhHNx_MexiaKWjnWJ1gDgveghEjMiL8BvsJSqI2D0H_Ajgt0SMPH5O53hwFbXa0jr5NMo-xaFUte5IzdCK3e7M3BOlRTMU0Wd8rSLEJ0XRfvSytl9uNLWxLbA6kv0miB2l6uROCRWccNEhbrTG6yhyJBkfJAmHfTgnXRxjN9GWYbti4diqYjQEeifc3--cjll5FntBFoWgakyXDDbi0S00SLoKF2qYdCeGWTW6_of1m6ICQuqS0Zmn4g-aqQZLRb27xwBTYbb29pAObV7RAcljvnG-2i-QqcZ0pCylvswDvOiQjqKAki8VDUGdR1RlUJ9-4G6d_uut7I0vnWYJWbqwdVdWlJVUIeq_ODbvDqCE0YsqSPsLySy1piStfthiQYhkew-8e6tiITiqPXWvREgUXTC1ztlRJUCIpWkQ%26flowName%3DGeneralOAuthFlow%26as%3DS321739438%253A1781049339204964%26client_id%3D439592955955-ivoi93ujai573amonpi7q7uefja71p1g.apps.googleusercontent.com%26requestPath%3D%252Fsignin%252Foauth%252Fconsent%23&dsh=S321739438%3A1781049339204964&flowName=GeneralOAuthFlow&o2v=2&opparams=%253F&pstMsg=1&rart=ANgoxcf1jyGXWb_tihuHtWpgMtY3WhSkauqcjQD7TvOcA-FIxlXSJPE3XpDSF7tLnrqbeNjkkuPXIf2qhAaN9r4IeStonFuHYBrGJXjEr3GH29MEV4vxcXs&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fapi%2Fauth%2Fcallback%2Fgoogle&response_type=code&scope=openid%20email%20profile&service=lso&state=bpV6P8KoSEQ82lOZeBN6ShvYaCe_AdmQWnUvBHD-0A0:0
+[   64231ms] [LOG] %c%s color: red; background: yellow; font-size: 24px; AVISO @ https://www.gstatic.com/_/mss/boq-identity/_/js/k=boq-identity.OAuthUi.pt_BR.3s7ieDzz-C8.es5.O/am=MgAAAADwD2AA8P_7bwBBtgPvGUABAgAAAAAAAACAAQAgAg/d=1/excm=_b,_tp,attributesview/ed=1/dg=0/wt=2/ujg=1/rs=AOaEmlFgR22eniG9Jao4OxPVmQcCPnNkKg/dti=1/m=_b,_tp:535
+[   64231ms] [LOG] %c%s font-size: 18px; O uso deste console pode permitir que invasores falsifiquem sua identidade para roubar informações por meio de um ataque chamado Self-XSS.
+Não insira nem cole códigos que você não conheça. @ https://www.gstatic.com/_/mss/boq-identity/_/js/k=boq-identity.OAuthUi.pt_BR.3s7ieDzz-C8.es5.O/am=MgAAAADwD2AA8P_7bwBBtgPvGUABAgAAAAAAAACAAQAgAg/d=1/excm=_b,_tp,attributesview/ed=1/dg=0/wt=2/ujg=1/rs=AOaEmlFgR22eniG9Jao4OxPVmQcCPnNkKg/dti=1/m=_b,_tp:535
+[   79707ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///./node_modules/react-dom/cjs/react-dom.development.js:29889
+[   79767ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/login?erro=aguardando_aprovacao:0
+[   79768ms] [LOG] [HMR] connected @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:38
+[   94108ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[   94233ms] [LOG] [Fast Refresh] done in 125ms @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:190
+[   95533ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[   96056ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[   96529ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[   97443ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[   98455ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[   98956ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/perfil:0
+[   98956ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/perfil:0
+[   98956ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/perfil:0
+[   99947ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  111744ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///./node_modules/react-dom/cjs/react-dom.development.js:29889
+[  111797ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/login:0
+[  111798ms] [LOG] [HMR] connected @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:38
+[  130652ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///./node_modules/react-dom/cjs/react-dom.development.js:29889
+[  130700ms] [LOG] [HMR] connected @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:38
+[  130751ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  139221ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///./node_modules/react-dom/cjs/react-dom.development.js:29889
+[  139266ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/login:0
+[  139267ms] [LOG] [HMR] connected @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:38
+[  142282ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///./node_modules/react-dom/cjs/react-dom.development.js:29889
+[  142297ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/login?erro=aguardando_aprovacao:0
+[  142298ms] [LOG] [HMR] connected @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:38
+[  166616ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  166698ms] [LOG] [Fast Refresh] done in 81ms @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:190
+[  168200ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  183389ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  183439ms] [LOG] [Fast Refresh] done in 50ms @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:190
+[  186644ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  187124ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  220273ms] [ERROR] Warning: Function components cannot be given refs. Attempts to access this ref will fail. Did you mean to use React.forwardRef()?%s%s 
+
+Check the render method of `DialogClose`. 
+    at Button (webpack-internal:///./src/components/ui/button.tsx:42:11)
+    at DialogClose (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/close/DialogClose.js:28:5)
+    at div
+    at FloatingFocusManager (webpack-internal:///./node_modules/@base-ui/react/esm/floating-ui-react/components/FloatingFocusManager.js:143:5)
+    at DialogPopup (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/popup/DialogPopup.js:51:5)
+    at FloatingPortal (webpack-internal:///./node_modules/@base-ui/react/esm/floating-ui-react/components/FloatingPortal.js:126:5)
+    at DialogPortal (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/portal/DialogPortal.js:31:5)
+    at DialogPortal (webpack-internal:///./src/components/ui/dialog.tsx:53:14)
+    at DialogContent (webpack-internal:///./src/components/ui/dialog.tsx:90:11)
+    at DialogRoot (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/root/DialogRoot.js:21:51)
+    at Dialog (webpack-internal:///./src/components/ui/dialog.tsx:29:14)
+    at div
+    at LojaTab (webpack-internal:///./src/pages/comunidade/index.tsx:1005:11)
+    at div
+    at main
+    at div
+    at div
+    at AppShell (webpack-internal:///./src/components/layout/AppShell.tsx:25:11)
+    at ComunidadePage (webpack-internal:///./src/pages/comunidade/index.tsx:1717:11)
+    at SessionProvider (webpack-internal:///./node_modules/next-auth/react/index.js:365:24)
+    at App (webpack-internal:///./src/pages/_app.tsx:17:11)
+    at PathnameContextProviderAdapter (webpack-internal:///./node_modules/next/dist/shared/lib/router/adapters.js:81:11)
+    at ErrorBoundary (webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/ErrorBoundary.js:41:9)
+    at ReactDevOverlay (webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/ReactDevOverlay.js:33:11)
+    at Container (webpack-internal:///./node_modules/next/dist/client/index.js:81:1)
+    at AppContainer (webpack-internal:///./node_modules/next/dist/client/index.js:189:11)
+    at Root (webpack-internal:///./node_modules/next/dist/client/index.js:413:11) @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[  233967ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  234026ms] [LOG] [Fast Refresh] done in 60ms @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:190
+[  240666ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  248881ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  248931ms] [LOG] [Fast Refresh] done in 50ms @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:190
+[  249161ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///./node_modules/react-dom/cjs/react-dom.development.js:29889
+[  249216ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/login:0
+[  249217ms] [LOG] [HMR] connected @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:38
+[  251151ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  251219ms] [LOG] [Fast Refresh] done in 69ms @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:190
+[  251380ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///./node_modules/react-dom/cjs/react-dom.development.js:29889
+[  251399ms] [LOG] [HMR] connected @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:38
+[  251437ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  267432ms] [ERROR] Error: Loading initial props cancelled
+    at eval (webpack-internal:///./node_modules/next/dist/shared/lib/router/router.js:1338:29)
+    at async Router.getRouteInfo (webpack-internal:///./node_modules/next/dist/shared/lib/router/router.js:1086:41)
+    at async Router.change (webpack-internal:///./node_modules/next/dist/shared/lib/router/router.js:672:29) @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[  271218ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  271269ms] [LOG] [Fast Refresh] done in 51ms @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:190
+[  271951ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  272865ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  273604ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  274224ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  277625ms] [ERROR] Warning: Function components cannot be given refs. Attempts to access this ref will fail. Did you mean to use React.forwardRef()?%s%s 
+
+Check the render method of `DialogClose`. 
+    at Button (webpack-internal:///./src/components/ui/button.tsx:42:11)
+    at DialogClose (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/close/DialogClose.js:28:5)
+    at div
+    at FloatingFocusManager (webpack-internal:///./node_modules/@base-ui/react/esm/floating-ui-react/components/FloatingFocusManager.js:143:5)
+    at DialogPopup (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/popup/DialogPopup.js:51:5)
+    at FloatingPortal (webpack-internal:///./node_modules/@base-ui/react/esm/floating-ui-react/components/FloatingPortal.js:126:5)
+    at DialogPortal (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/portal/DialogPortal.js:31:5)
+    at DialogPortal (webpack-internal:///./src/components/ui/dialog.tsx:53:14)
+    at DialogContent (webpack-internal:///./src/components/ui/dialog.tsx:90:11)
+    at DialogRoot (webpack-internal:///./node_modules/@base-ui/react/esm/dialog/root/DialogRoot.js:21:51)
+    at Dialog (webpack-internal:///./src/components/ui/dialog.tsx:29:14)
+    at div
+    at LojaTab (webpack-internal:///./src/pages/comunidade/index.tsx:1005:11)
+    at div
+    at main
+    at div
+    at div
+    at AppShell (webpack-internal:///./src/components/layout/AppShell.tsx:25:11)
+    at ComunidadePage (webpack-internal:///./src/pages/comunidade/index.tsx:1717:11)
+    at SessionProvider (webpack-internal:///./node_modules/next-auth/react/index.js:365:24)
+    at App (webpack-internal:///./src/pages/_app.tsx:17:11)
+    at PathnameContextProviderAdapter (webpack-internal:///./node_modules/next/dist/shared/lib/router/adapters.js:81:11)
+    at ErrorBoundary (webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/ErrorBoundary.js:41:9)
+    at ReactDevOverlay (webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/ReactDevOverlay.js:33:11)
+    at Container (webpack-internal:///./node_modules/next/dist/client/index.js:81:1)
+    at AppContainer (webpack-internal:///./node_modules/next/dist/client/index.js:189:11)
+    at Root (webpack-internal:///./node_modules/next/dist/client/index.js:413:11) @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[  312610ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  312721ms] [LOG] [Fast Refresh] done in 111ms @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:190
+[  312959ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/perfil:0
+[  312959ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/perfil:0
+[  312959ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/perfil:0
+[  331020ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  331092ms] [LOG] [Fast Refresh] done in 72ms @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:190
+[  336187ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  336241ms] [LOG] [Fast Refresh] done in 53ms @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:190
+[  339702ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  352906ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  356662ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  357023ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///./node_modules/react-dom/cjs/react-dom.development.js:29889
+[  357073ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/login:0
+[  357074ms] [LOG] [HMR] connected @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:38
+[  381525ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  381612ms] [LOG] [Fast Refresh] done in 87ms @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:190
+[  384554ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  384609ms] [LOG] [Fast Refresh] done in 56ms @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:190
+[  386882ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  392461ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  396318ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  396375ms] [LOG] [Fast Refresh] done in 57ms @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:190
+[  401901ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///./node_modules/react-dom/cjs/react-dom.development.js:29889
+[  401954ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/login:0
+[  401955ms] [LOG] [HMR] connected @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:38
+[  411592ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  419126ms] [ERROR] Error: Loading initial props cancelled
+    at eval (webpack-internal:///./node_modules/next/dist/shared/lib/router/router.js:1338:29)
+    at async Router.getRouteInfo (webpack-internal:///./node_modules/next/dist/shared/lib/router/router.js:1086:41)
+    at async Router.change (webpack-internal:///./node_modules/next/dist/shared/lib/router/router.js:672:29) @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[  420603ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  420660ms] [LOG] [Fast Refresh] done in 56ms @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:190
+[  422070ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  422919ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  438193ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///./node_modules/react-dom/cjs/react-dom.development.js:29889
+[  438246ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/login:0
+[  438247ms] [LOG] [HMR] connected @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:38
+[  441901ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///./node_modules/react-dom/cjs/react-dom.development.js:29889
+[  441921ms] [LOG] [HMR] connected @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:38
+[  453763ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  453877ms] [LOG] [Fast Refresh] done in 115ms @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:190
+[  456122ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  456209ms] [LOG] [Fast Refresh] done in 88ms @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:190
+[  476158ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  476209ms] [LOG] [Fast Refresh] done in 51ms @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:190
+[  477789ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  482986ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///./node_modules/react-dom/cjs/react-dom.development.js:29889
+[  483038ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/login:0
+[  483039ms] [LOG] [HMR] connected @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:38
+[  522169ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///./node_modules/react-dom/cjs/react-dom.development.js:29889
+[  522221ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/login:0
+[  522222ms] [LOG] [HMR] connected @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:38
+[  524098ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///./node_modules/react-dom/cjs/react-dom.development.js:29889
+[  524119ms] [LOG] [HMR] connected @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:38
+[  538525ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  538634ms] [LOG] [Fast Refresh] done in 109ms @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:190
+[  679135ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  679399ms] [LOG] [Fast Refresh] done in 264ms @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:190
+[  679648ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/perfil:0
+[  679648ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/perfil:0
+[  679648ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/perfil:0
+[  681785ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  682090ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  682383ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  682690ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  683033ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  686008ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  689246ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  699188ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/perfil:0
+[  699188ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/perfil:0
+[  699188ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/perfil:0
+[  744343ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  744994ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  745025ms] [LOG] [Fast Refresh] done in 31ms @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:190
+[  745278ms] [LOG] [Fast Refresh] done in 285ms @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:190
