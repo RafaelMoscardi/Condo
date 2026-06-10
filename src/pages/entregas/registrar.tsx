@@ -10,7 +10,6 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
 import { Search, X, Check, Building2 } from "lucide-react";
-import { cn } from "@/lib/utils";
 
 interface Morador {
   id: string;

@@ -7,6 +7,7 @@ import formidable from "formidable";
 import fs from "fs";
 import path from "path";
 import { randomUUID } from "crypto";
+import { uploadFile, deleteFile } from "@/lib/storage";
 
 export const config = { api: { bodyParser: false } };
 
@@ -16,10 +17,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   const session = await getServerSession(req, res, authOptions);
   if (!session) return res.status(401).json({ erro: "Não autenticado" });
 
-  const uploadDir = path.join(process.cwd(), "public", "uploads", "avatars");
-  if (!fs.existsSync(uploadDir)) fs.mkdirSync(uploadDir, { recursive: true });
-
-  const form = formidable({ uploadDir, keepExtensions: true, maxFileSize: 5 * 1024 * 1024 });
+  const form = formidable({ maxFileSize: 5 * 1024 * 1024 });
   const [fields, files] = await form.parse(req);
 
   const get = (f: string) => {
@@ -65,32 +63,23 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   const usuario = await prisma.user.findUnique({ where: { id: session.user.id } });
   if (!usuario) return res.status(404).json({ erro: "Usuário não encontrado" });
 
-  // Handle password change
   let passwordHash: string | undefined;
   if (novaSenha) {
-    if (!senhaAtual) {
-      return res.status(400).json({ erro: "Informe a senha atual para alterar a senha" });
-    }
+    if (!senhaAtual) return res.status(400).json({ erro: "Informe a senha atual para alterar a senha" });
     const senhaValida = await bcrypt.compare(senhaAtual, usuario.password);
     if (!senhaValida) return res.status(400).json({ erro: "Senha atual incorreta" });
     if (novaSenha.length < 6) return res.status(400).json({ erro: "Nova senha deve ter no mínimo 6 caracteres" });
     passwordHash = await bcrypt.hash(novaSenha, 10);
   }
 
-  // Handle photo upload
   let fotoUrl: string | undefined;
   const fotoFile = Array.isArray(files.foto) ? files.foto[0] : files.foto;
   if (fotoFile && fotoFile.size > 0) {
-    // Delete old photo
-    if (usuario.fotoUrl) {
-      const oldPath = path.join(process.cwd(), "public", usuario.fotoUrl);
-      try { fs.unlinkSync(oldPath); } catch {}
-    }
+    if (usuario.fotoUrl) await deleteFile(usuario.fotoUrl);
     const ext = path.extname(fotoFile.originalFilename ?? ".jpg");
-    const novoNome = `${randomUUID()}${ext}`;
-    const novoCaminho = path.join(uploadDir, novoNome);
-    fs.renameSync(fotoFile.filepath, novoCaminho);
-    fotoUrl = `/uploads/avatars/${novoNome}`;
+    const buffer = fs.readFileSync(fotoFile.filepath);
+    fotoUrl = await uploadFile(buffer, `${randomUUID()}${ext}`, "avatars");
+    try { fs.unlinkSync(fotoFile.filepath); } catch {}
   } else if (fotoFile?.filepath) {
     try { fs.unlinkSync(fotoFile.filepath); } catch {}
   }

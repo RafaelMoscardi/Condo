@@ -31,7 +31,6 @@ import {
   ShoppingBag,
   Send,
   Plus,
-  Trash2,
   ImagePlus,
   X,
   ChevronRight,
@@ -279,17 +278,6 @@ function VagasTab({ userId, perfil }: { userId: string; perfil: string }) {
     }
   };
 
-  const toggleDisponivel = async (id: string, atual: boolean) => {
-    const res = await fetch(`/api/comunidade/vagas/${id}`, {
-      method: "PATCH",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ disponivel: !atual }),
-    });
-    if (res.ok) {
-      fetchVagas();
-      toast.success(atual ? "Vaga marcada como indisponível" : "Vaga reativada");
-    }
-  };
 
   const handleDelete = async (id: string) => {
     const res = await fetch(`/api/comunidade/vagas/${id}`, { method: "DELETE" });
@@ -541,7 +529,7 @@ const CAT_LABEL: Record<string, string> = {
 
 // ─── Loja Tab ─────────────────────────────────────────────────────────────────
 
-function LojaTab({ userId }: { userId: string }) {
+function LojaTab() {
   const [anuncios, setAnuncios] = useState<AnuncioLoja[]>([]);
   const [filtroTipo, setFiltroTipo] = useState("todos");
   const [dialogOpen, setDialogOpen] = useState(false);
@@ -873,7 +861,7 @@ export default function ComunidadePage({ perfil, userId }: Props) {
         {/* Content */}
         {activeTab === "chat"  && <ChatTab  userId={userId} />}
         {activeTab === "vagas" && <VagasTab userId={userId} perfil={perfil} />}
-        {activeTab === "loja"  && <LojaTab  userId={userId} />}
+        {activeTab === "loja"  && <LojaTab />}
       </div>
     </AppShell>
   );
