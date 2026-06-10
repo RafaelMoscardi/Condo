@@ -23,7 +23,13 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     data: { token, email: user.email, expiraEm },
   });
 
-  await enviarEmailResetSenha(user.email, token);
+  try {
+    await enviarEmailResetSenha(user.email, token);
+  } catch (err) {
+    console.error("[forgot-password] Falha ao enviar email:", err);
+    // Log reset URL so dev can test without email config
+    console.info(`[forgot-password] Reset URL: ${process.env.NEXTAUTH_URL}/redefinir-senha?token=${token}`);
+  }
 
   return res.status(200).json({ ok: true });
 }
